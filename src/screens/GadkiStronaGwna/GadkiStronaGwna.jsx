@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
 import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
-import { Footer } from "./sections/Footer";
 import { Frame } from "./sections/Frame";
 import { FrameWrapper } from "./sections/FrameWrapper";
 import { Group } from "./sections/Group";

@@ -9,7 +9,7 @@ export const Footer = () => {
           <img
             className="absolute top-0 left-0 w-[177px] h-[77px] cursor-pointer"
             alt="Fundacja Dajemy Dzieciom Siłę"
-            src="/img/fdds-logo.svg"
+            src="/img/fdds-logo-red.svg"
           />
         </Link>
 
@@ -72,7 +72,7 @@ export const Footer = () => {
         <img
           className="absolute top-[184px] left-0 w-[172px] h-[21px]"
           alt="Fundacja Dajemy Dzieciom Siłę"
-          src="/img/fdds-logo-small.svg"
+          src="/img/fdds-logo-small-red.svg"
         />
       </div>
     </footer>

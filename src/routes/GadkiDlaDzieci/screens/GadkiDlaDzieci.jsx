@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Header } from "../../../components/Header";
+import { Footer } from "../../../components/Footer";
 
 export const GadkiDlaDzieci = () => {
   useEffect(() => {
@@ -35,77 +36,7 @@ export const GadkiDlaDzieci = () => {
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
       <Header />
-      <footer className="absolute left-0 bottom-0 w-[1728px] h-[485px] flex items-center justify-center bg-beige-100">
-        <div className="mt-[119.4px] h-[206.43px] ml-[-34px] w-[1146px] relative">
-          <img
-            className="absolute top-0 left-0 w-[177px] h-[77px]"
-            alt="Frame"
-            src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/frame-18.svg"
-          />
-
-          <div className="absolute top-[182px] left-[calc(50.00%_-_273px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
-            Polityka prywatności
-          </div>
-
-          <div className="absolute top-[182px] left-[calc(50.00%_+_27px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
-            Deklaracja dostępności
-          </div>
-
-          <p className="absolute top-[182px] left-[calc(50.00%_+_327px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
-            <span className="tracking-[-0.03px]">Zaprojektował i wdrożył</span>
-
-            <span className="font-bold tracking-[-0.03px]"> cięty język|</span>
-          </p>
-
-          <div className="flex flex-col w-[122px] items-start gap-2.5 absolute top-[7px] left-[300px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
-              Kontakt
-            </div>
-
-            <div className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6">
-              gadki@fdds.pl
-            </div>
-          </div>
-
-          <div className="flex flex-col w-[178px] items-start gap-2.5 absolute top-1.5 left-[600px]">
-            <div className="mt-[-1.00px] relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6">
-              Dla dzieci
-            </div>
-
-            <div className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6">
-              Dla rodziców i opiekunów
-            </div>
-
-            <div className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6">
-              Dla edukatorów
-            </div>
-          </div>
-
-          <div className="inline-flex flex-col items-start gap-2.5 absolute top-1.5 left-[901px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
-              Logowanie/Rejestracja
-            </div>
-
-            <div className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6">
-              O programie
-            </div>
-
-            <div className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6">
-              FAQ
-            </div>
-
-            <div className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6">
-              Для батьків
-            </div>
-          </div>
-
-          <img
-            className="absolute top-[184px] left-0 w-[172px] h-[21px]"
-            alt="Frame"
-            src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/frame-27.svg"
-          />
-        </div>
-      </footer>
+      <Footer />
 
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
@@ -148,8 +79,8 @@ export const GadkiDlaDzieci = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff]">
-              <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff] hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+              <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
                 Odwiedź stronę
               </div>
             </div>
@@ -187,8 +118,8 @@ export const GadkiDlaDzieci = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff]">
-              <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff] hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+              <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
                 Odwiedź stronę
               </div>
             </div>
@@ -412,8 +343,8 @@ export const GadkiDlaDzieci = () => {
           </div>
         </div>
 
-        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Pobierz
           </div>
         </div>
@@ -480,8 +411,8 @@ export const GadkiDlaDzieci = () => {
           </div>
         </div>
 
-        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Pobierz
           </div>
         </div>
@@ -500,8 +431,8 @@ export const GadkiDlaDzieci = () => {
           </p>
         </div>
 
-        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Pobierz
           </div>
         </div>
@@ -520,8 +451,8 @@ export const GadkiDlaDzieci = () => {
           </p>
         </div>
 
-        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Pobierz
           </div>
         </div>
@@ -541,8 +472,8 @@ export const GadkiDlaDzieci = () => {
             </div>
           </div>
 
-          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
               Pobierz
             </div>
           </div>
@@ -561,8 +492,8 @@ export const GadkiDlaDzieci = () => {
             </div>
           </div>
 
-          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
               Pobierz
             </div>
           </div>
@@ -581,8 +512,8 @@ export const GadkiDlaDzieci = () => {
             </div>
           </div>
 
-          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
               Pobierz
             </div>
           </div>
@@ -601,8 +532,8 @@ export const GadkiDlaDzieci = () => {
             </div>
           </div>
 
-          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
               Pobierz
             </div>
           </div>
@@ -709,8 +640,8 @@ export const GadkiDlaDzieci = () => {
           </div>
         </div>
 
-        <div className="flex-[0_0_auto] flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px]">
-          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <div className="flex-[0_0_auto] flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Przejdź do FAQ
           </div>
         </div>

@@ -37,8 +37,8 @@ export const FrameWrapper = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white">
-            <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-fddsraspberry">
               Odwiedź stronę
             </div>
           </div>
@@ -76,8 +76,8 @@ export const FrameWrapper = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white">
-            <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-fddsraspberry">
               Odwiedź stronę
             </div>
           </div>
