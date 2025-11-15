@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../../../components/Header";
 
 export const GadkiDlaEdukatorw = () => {
   return (
@@ -29,6 +30,7 @@ export const GadkiDlaEdukatorw = () => {
 
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
+        <Header />
         <footer className="absolute left-0 bottom-0 w-[1728px] h-[485px] flex items-center justify-center bg-beige-100">
           <div className="mt-[119.4px] h-[206.43px] ml-[-34px] w-[1146px] relative">
             <img
@@ -105,18 +107,6 @@ export const GadkiDlaEdukatorw = () => {
           className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
           alt="Group"
           src="https://c.animaapp.com/mhyuwd3uGBRqk0/img/group.png"
-        />
-
-        <img
-          className="absolute top-16 left-[110px] w-[164px] h-[71px]"
-          alt="Frame"
-          src="https://c.animaapp.com/mhyuwd3uGBRqk0/img/frame-18.svg"
-        />
-
-        <img
-          className="absolute top-[83px] left-[1478px] w-[60px] h-[46px]"
-          alt="Layer"
-          src="https://c.animaapp.com/mhyuwd3uGBRqk0/img/layer-1.svg"
         />
 
         <img

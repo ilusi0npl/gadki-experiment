@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../../../components/Header";
 import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
 import { Footer } from "./sections/Footer";
@@ -28,6 +29,7 @@ export const GadkiOKampanii = () => {
 
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
+      <Header />
       <Footer />
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
@@ -38,18 +40,6 @@ export const GadkiOKampanii = () => {
       <img
         className="absolute w-[102.47%] h-0 top-0 left-[-65.16%]"
         alt="Vector"
-      />
-
-      <img
-        className="absolute top-16 left-[110px] w-[164px] h-[71px]"
-        alt="Frame"
-        src="https://c.animaapp.com/mhyusz4fmWst0p/img/frame-18.svg"
-      />
-
-      <img
-        className="absolute top-[83px] left-[1478px] w-[60px] h-[46px]"
-        alt="Layer"
-        src="https://c.animaapp.com/mhyusz4fmWst0p/img/layer-1.svg"
       />
 
       <img

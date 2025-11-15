@@ -26,7 +26,7 @@ export const GadkiMenuGwne = () => {
 
       <Link to="/">
         <img
-          className="absolute top-[90px] left-[1478px] w-12 h-12 cursor-pointer"
+          className="absolute top-16 right-[110px] w-[60px] h-[46px] cursor-pointer"
           alt="Close"
           src="https://c.animaapp.com/mhyud8wmJZMflz/img/layer-1.svg"
         />

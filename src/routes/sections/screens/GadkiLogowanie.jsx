@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../../../components/Header";
 import { BoxAdresEmail } from "./sections/BoxAdresEmail";
 import { Boxes } from "./sections/Boxes";
 import { BoxesWrapper } from "./sections/BoxesWrapper";
@@ -22,6 +23,7 @@ export const GadkiLogowanie = () => {
 
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
+      <Header />
       <Footer />
       <img
         className="absolute top-[370px] left-[1158px] w-[417px] h-52"
@@ -39,18 +41,6 @@ export const GadkiLogowanie = () => {
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
         alt="Group"
         src="https://c.animaapp.com/mhyvuxooJVyLWW/img/group.png"
-      />
-
-      <img
-        className="absolute top-16 left-[110px] w-[164px] h-[71px]"
-        alt="Frame"
-        src="https://c.animaapp.com/mhyvuxooJVyLWW/img/frame-18.svg"
-      />
-
-      <img
-        className="absolute top-[83px] left-[1478px] w-[60px] h-[46px]"
-        alt="Layer"
-        src="https://c.animaapp.com/mhyvuxooJVyLWW/img/layer-1.svg"
       />
 
       <img

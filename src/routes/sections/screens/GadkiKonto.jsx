@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../../../components/Header";
 import { Footer } from "./sections/Footer";
 import { Frame } from "./sections/Frame";
 import { FrameWrapper } from "./sections/FrameWrapper";
@@ -18,23 +19,12 @@ export const GadkiKonto = () => {
 
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
+      <Header />
       <Footer />
       <img
         className="absolute w-[10.11%] h-[2.48%] top-[2.18%] left-[3.95%]"
         alt="Group"
         src="https://c.animaapp.com/mhyvw56jKmrjx6/img/group.png"
-      />
-
-      <img
-        className="absolute top-16 left-[110px] w-[164px] h-[71px]"
-        alt="Frame"
-        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/frame-13.svg"
-      />
-
-      <img
-        className="absolute top-[83px] left-[1478px] w-[60px] h-[46px]"
-        alt="Layer"
-        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/layer-1.svg"
       />
 
       <img

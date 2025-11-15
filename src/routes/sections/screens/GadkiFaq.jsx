@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../../../components/Header";
 import { DivWrapper } from "./sections/DivWrapper";
 import { Footer } from "./sections/Footer";
 import { Frame } from "./sections/Frame";
@@ -27,6 +28,7 @@ export const GadkiFaq = () => {
 
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
+      <Header />
       <Footer />
 
       <img
@@ -35,18 +37,7 @@ export const GadkiFaq = () => {
         src="https://c.animaapp.com/mhyvrx3iXxUduh/img/group.png"
       />
 
-      <img
-        className="absolute top-16 left-[110px] w-[164px] h-[71px]"
-        alt="Frame"
-        src="https://c.animaapp.com/mhyvrx3iXxUduh/img/frame-13.svg"
-      />
-
       <Frame />
-      <img
-        className="absolute top-[83px] left-[1478px] w-[60px] h-[46px]"
-        alt="Layer"
-        src="https://c.animaapp.com/mhyvrx3iXxUduh/img/layer-1-1.svg"
-      />
 
       <img
         className="absolute top-[77px] left-[calc(50.00%_-_73px)] w-[146px] h-[67px]"

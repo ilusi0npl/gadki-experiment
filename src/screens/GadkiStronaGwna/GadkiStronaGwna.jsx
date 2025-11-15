@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../../components/Header";
 import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
 import { Footer } from "./sections/Footer";
@@ -45,6 +46,7 @@ export const GadkiStronaGwna = () => {
 
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
+        <Header />
         <Footer />
 
         <img
@@ -57,12 +59,6 @@ export const GadkiStronaGwna = () => {
           className="absolute w-full h-0 top-[11.53%] left-[46.39%]"
           alt="Vector"
           src="/img/vector.png"
-        />
-
-        <img
-          className="absolute top-16 left-[110px] w-[164px] h-[71px]"
-          alt="Frame"
-          src="https://c.animaapp.com/kiXkeqSn/img/frame-13.svg"
         />
 
         <p className="absolute top-[3262px] left-[calc(50.00%_-_190px)] w-[380px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
@@ -96,12 +92,6 @@ export const GadkiStronaGwna = () => {
           className="absolute top-[8374px] left-[1480px] w-[248px] h-[419px]"
           alt="Group"
           src="https://c.animaapp.com/kiXkeqSn/img/group-11@2x.png"
-        />
-
-        <img
-          className="absolute top-[83px] left-[1478px] w-[60px] h-[46px]"
-          alt="Layer"
-          src="https://c.animaapp.com/kiXkeqSn/img/layer-1.svg"
         />
 
         <div className="absolute top-[4703px] left-[576px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
