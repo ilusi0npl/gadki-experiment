@@ -7,8 +7,13 @@ import { Frame } from "./sections/Frame";
 import { FrameWrapper } from "./sections/FrameWrapper";
 import { Group } from "./sections/Group";
 import { SectionComponentNode } from "./sections/SectionComponentNode";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 export const GadkiStronaGwna = () => {
+  const zasadyGadki = useScrollReveal();
+  const materialy = useScrollReveal();
+  const materialyText = useScrollReveal();
+
   useEffect(() => {
     document.title = "GADKI - program wzmacniania bezpieczeństwa dzieci";
   }, []);
@@ -81,8 +86,10 @@ export const GadkiStronaGwna = () => {
 
         <Frame />
         <Group />
-        <div className="absolute top-[2963px] left-[274px] w-[1172px] font-happy-season font-semibold text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px]">
-          Zasady GADKI
+        <div ref={zasadyGadki.ref} className={`absolute top-[2963px] left-[274px] w-[1172px] ${zasadyGadki.className}`}>
+          <div className="font-happy-season font-semibold text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px]">
+            Zasady GADKI
+          </div>
         </div>
 
         <FrameWrapper />
@@ -92,15 +99,19 @@ export const GadkiStronaGwna = () => {
           src="https://c.animaapp.com/kiXkeqSn/img/group-11@2x.png"
         />
 
-        <div className="absolute top-[4703px] left-[576px] font-happy-season font-semibold text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
-          Materiały
+        <div ref={materialy.ref} className={`absolute top-[4703px] left-[576px] ${materialy.className}`}>
+          <div className="font-happy-season font-semibold text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
+            Materiały
+          </div>
         </div>
 
-        <p className="absolute top-[4963px] left-[574px] w-[580px] font-lato font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
-          Na tej stronie znajdują się informacje o problemie wykorzystywania
-          seksualnego dzieci oraz przyjazne dla dzieci materiały, które ułatwią
-          Ci rozmowę.
-        </p>
+        <div ref={materialyText.ref} className={`absolute top-[4963px] left-[574px] w-[580px] ${materialyText.className}`}>
+          <p className="font-lato font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
+            Na tej stronie znajdują się informacje o problemie wykorzystywania
+            seksualnego dzieci oraz przyjazne dla dzieci materiały, które ułatwią
+            Ci rozmowę.
+          </p>
+        </div>
 
         <DivWrapper />
 

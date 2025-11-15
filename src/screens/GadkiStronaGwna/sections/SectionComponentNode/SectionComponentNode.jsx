@@ -1,16 +1,19 @@
 import React from "react";
+import { useScrollReveal } from "../../../../hooks/useScrollReveal";
 
 export const SectionComponentNode = () => {
+  const { ref, className } = useScrollReveal();
+
   return (
-    <div className="flex flex-col w-[655px] items-center gap-12 absolute top-[5938px] left-[535px]">
+    <div ref={ref} className={`flex flex-col w-[655px] items-center gap-12 absolute top-[5938px] left-[535px] ${className}`}>
       <img
-        className="absolute top-[433px] left-[927px] w-[266px] h-[337px] animate-gentle-pulse"
+        className="absolute top-[433px] left-[927px] w-[266px] h-[337px]"
         alt="Vector"
         src="https://c.animaapp.com/kiXkeqSn/img/vector-14@2x.png"
       />
 
       <img
-        className="relative w-[180px] h-[180px] aspect-[1] animate-gentle-pulse"
+        className="relative w-[180px] h-[180px] aspect-[1]"
         alt="Gadek"
         src="https://c.animaapp.com/kiXkeqSn/img/gadek.svg"
       />

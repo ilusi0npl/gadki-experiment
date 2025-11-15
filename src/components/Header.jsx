@@ -24,13 +24,13 @@ export const Header = () => {
     <header className="absolute top-0 left-0 w-full z-50">
       <div className="max-w-[1728px] mx-auto">
         <div className="flex items-center justify-between px-[110px] py-16">
-          <Link to="/">
+          <a href="https://fdds.pl/" target="_blank" rel="noopener noreferrer">
             <img
               className="w-[164px] h-[71px]"
-              alt="Frame"
-              src="https://c.animaapp.com/mhyvw56jKmrjx6/img/frame-13.svg"
+              alt="Fundacja Dajemy Dzieciom Siłę"
+              src="/img/fdds-logo.svg"
             />
-          </Link>
+          </a>
 
           <div className="relative w-[60px] h-[46px]">
             {/* Hamburger button */}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useScrollReveal } from "../../../../hooks/useScrollReveal";
 
 const faqData = [
   {
@@ -22,13 +23,14 @@ const faqData = [
 
 export const Div = () => {
   const [openId, setOpenId] = useState(1); // Pierwsze pytanie otwarte domyślnie
+  const { ref, className } = useScrollReveal();
 
   const toggleQuestion = (id) => {
     setOpenId(openId === id ? null : id);
   };
 
   return (
-    <div className="flex flex-col w-[1080px] items-center gap-12 absolute top-[7124px] left-[calc(50.00%_-_540px)]">
+    <div ref={ref} className={`flex flex-col w-[1080px] items-center gap-12 absolute top-[7124px] left-[calc(50.00%_-_540px)] ${className}`}>
       <div className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
         Często zadawane pytania
       </div>

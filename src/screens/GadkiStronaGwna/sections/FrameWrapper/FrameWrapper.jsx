@@ -1,8 +1,11 @@
 import React from "react";
+import { useScrollReveal } from "../../../../hooks/useScrollReveal";
 
 export const FrameWrapper = () => {
+  const { ref, className } = useScrollReveal();
+
   return (
-    <div className="absolute top-[8285px] left-0 w-[1728px] h-[913px]">
+    <div ref={ref} className={`absolute top-[8285px] left-0 w-[1728px] h-[913px] ${className}`}>
       <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px]">
         <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
           Jeżeli jesteś dzieckiem i trudno Ci porozmawiać z osobą dorosłą
@@ -28,8 +31,8 @@ export const FrameWrapper = () => {
         </p>
 
         <div className="flex flex-col w-[281.38px] items-start gap-6 relative flex-[0_0_auto]">
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-white">
               Zadzwoń
             </div>
           </div>
@@ -67,8 +70,8 @@ export const FrameWrapper = () => {
         </p>
 
         <div className="flex flex-col w-[281.38px] items-start gap-6 relative flex-[0_0_auto]">
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px]">
-            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-white">
               Zadzwoń
             </div>
           </div>

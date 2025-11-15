@@ -8,8 +8,8 @@ export const Footer = () => {
         <Link to="/">
           <img
             className="absolute top-0 left-0 w-[177px] h-[77px] cursor-pointer"
-            alt="Frame"
-            src="https://c.animaapp.com/mhyuqxqvJZMflz/img/frame-13.svg"
+            alt="Fundacja Dajemy Dzieciom Siłę"
+            src="/img/fdds-logo.svg"
           />
         </Link>
 
@@ -71,8 +71,8 @@ export const Footer = () => {
 
         <img
           className="absolute top-[184px] left-0 w-[172px] h-[21px]"
-          alt="Frame"
-          src="https://c.animaapp.com/mhyuqxqvJZMflz/img/frame-27.svg"
+          alt="Fundacja Dajemy Dzieciom Siłę"
+          src="/img/fdds-logo-small.svg"
         />
       </div>
     </footer>

@@ -1,8 +1,11 @@
 import React from "react";
+import { useScrollReveal } from "../../../../hooks/useScrollReveal";
 
 export const DivWrapper = () => {
+  const { ref, className } = useScrollReveal();
+
   return (
-    <div className="flex w-[1180px] items-center gap-5 absolute top-[5131px] left-[274px]">
+    <div ref={ref} className={`flex w-[1180px] items-center gap-5 absolute top-[5131px] left-[274px] ${className}`}>
       <div className="relative w-[380px] h-[480px] bg-white rounded-xl">
         <div className="absolute top-[236px] left-[71px] w-[237px] h-[244px] flex gap-[16.3px]">
           <img

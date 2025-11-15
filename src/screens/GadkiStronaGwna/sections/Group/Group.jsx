@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useScrollReveal } from "../../../../hooks/useScrollReveal";
 
 const imgVector7 = "https://www.figma.com/api/mcp/asset/bcc5868e-ba4e-48a3-86e7-7e08fdbb3aff";
 const imgVector3 = "https://www.figma.com/api/mcp/asset/485f3a7b-5be6-4b18-ad1f-11de6a8c4824";
@@ -91,6 +92,7 @@ const cardsData = [
 
 export const Group = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { ref, className } = useScrollReveal();
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? cardsData.length - 1 : prev - 1));
@@ -105,7 +107,7 @@ export const Group = () => {
   return (
     <>
       {/* Carousel Card */}
-      <div className="absolute top-[3485px] left-[592px] w-[441px] h-[527px]">
+      <div ref={ref} className={`absolute top-[3485px] left-[592px] w-[441px] h-[527px] ${className}`}>
         <div className="absolute top-[23px] left-[31px] w-[380px] h-[480px]">
           {/* Current Card */}
           <div
