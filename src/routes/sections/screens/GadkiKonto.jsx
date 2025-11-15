@@ -1,0 +1,99 @@
+import React from "react";
+import { Footer } from "./sections/Footer";
+import { Frame } from "./sections/Frame";
+import { FrameWrapper } from "./sections/FrameWrapper";
+
+export const GadkiKonto = () => {
+  return (
+    <div className="bg-beige-200 w-full min-w-[1728px] h-[3060px] relative">
+      <Footer />
+      <img
+        className="absolute w-[10.11%] h-[2.48%] top-[2.18%] left-[3.95%]"
+        alt="Group"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/group.png"
+      />
+
+      <img
+        className="top-0 h-[259px] absolute left-0 w-[1728px]"
+        alt="Union"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/union.svg"
+      />
+
+      <img
+        className="absolute top-16 left-[110px] w-[164px] h-[71px]"
+        alt="Frame"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/frame-13.svg"
+      />
+
+      <img
+        className="absolute top-[83px] left-[1478px] w-[60px] h-[46px]"
+        alt="Layer"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/layer-1.svg"
+      />
+
+      <img
+        className="absolute top-[77px] left-[calc(50.00%_-_73px)] w-[146px] h-[67px]"
+        alt="Frame"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/frame-12.svg"
+      />
+
+      <Frame />
+      <FrameWrapper />
+      <img
+        className="absolute top-[1593px] left-[calc(50.00%_-_116px)] w-[231px] h-[251px]"
+        alt="Piesek"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/piesek2-01-1.png"
+      />
+
+      <div className="inline-flex items-center gap-5 absolute top-[821px] left-[274px]">
+        <div className="relative w-20 mt-[-1.00px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-[#e83f4b] text-4xl text-center tracking-[-0.40px] leading-[54px]">
+          01
+        </div>
+
+        <div className="relative w-[473.01px] mt-[-1.00px] [font-family:'Happy_Season-Medium',Helvetica] font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
+          Zaświadczenia po realizacji zajęć
+        </div>
+      </div>
+
+      <div className="inline-flex items-center gap-5 absolute top-[1123px] left-[274px]">
+        <div className="relative w-20 mt-[-1.00px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-[#e83f4b] text-4xl text-center tracking-[-0.40px] leading-[54px]">
+          02
+        </div>
+
+        <div className="relative w-[473.01px] mt-[-1.00px] [font-family:'Happy_Season-Medium',Helvetica] font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
+          Zaświadczenia dla szkoły/przedszkola
+        </div>
+      </div>
+
+      <img
+        className="top-[1042px] absolute left-[276px] w-[1178px] h-px object-cover"
+        alt="Line"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/line-7.svg"
+      />
+
+      <img
+        className="top-[1344px] absolute left-[276px] w-[1178px] h-px object-cover"
+        alt="Line"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/line-7.svg"
+      />
+
+      <div className="inline-flex items-center justify-center gap-2.5 px-6 py-5 absolute top-[907px] left-[374px] bg-[#e83f4b] rounded-[48px]">
+        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          Wypełnij formularz i otrzymaj zaświadzczenie
+        </p>
+      </div>
+
+      <div className="inline-flex items-center justify-center gap-2.5 px-6 py-5 absolute top-[1209px] left-[374px] bg-[#e83f4b] rounded-[48px]">
+        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          Wypełnij formularz i otrzymaj certyfikat
+        </p>
+      </div>
+
+      <img
+        className="absolute top-[77px] left-[1374px] w-[61px] h-[61px]"
+        alt="User"
+        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/user.svg"
+      />
+    </div>
+  );
+};

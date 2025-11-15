@@ -1,0 +1,1 @@
+export { GadkiStronaGwna } from "./GadkiStronaGwna";
