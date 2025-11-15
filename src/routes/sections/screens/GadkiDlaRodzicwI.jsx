@@ -10,18 +10,31 @@ import { Newsletter } from "./sections/Newsletter";
 export const GadkiDlaRodzicwI = () => {
   return (
     <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[10131px] relative">
+      {/* BACKGROUND LAYER - Full-width backgrounds */}
+      <div className="absolute inset-0 w-screen pointer-events-none">
+        {/* Top Union SVG - Full width */}
+        <img
+          className="absolute w-screen h-[778px] top-0 left-0 object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-3.svg"
+        />
+
+        {/* Newsletter Union SVG - Full width */}
+        <img
+          className="absolute top-[8610px] left-0 w-screen h-[723px] object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-2.svg"
+        />
+      </div>
+
+      {/* CONTENT LAYER - Centered 1728px container */}
+      <div className="max-w-[1728px] mx-auto relative h-full">
       <Footer />
       <FooterTextWrapper />
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
         alt="Group"
         src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/group.png"
-      />
-
-      <img
-        className="absolute top-0 left-0 w-[1728px] h-[778px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-3.svg"
       />
 
       <img
@@ -45,12 +58,6 @@ export const GadkiDlaRodzicwI = () => {
       <div className="absolute top-[329px] left-[474px] w-[781px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-white text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
         Dla rodziców i opiekunów
       </div>
-
-      <img
-        className="absolute top-[8610px] left-0 w-[1726px] h-[723px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-2.svg"
-      />
 
       <Frame />
       <FrameWrapper />
@@ -158,6 +165,7 @@ export const GadkiDlaRodzicwI = () => {
             Odtwórz
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

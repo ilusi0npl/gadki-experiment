@@ -9,6 +9,25 @@ import { Newsletter } from "./sections/Newsletter";
 export const GadkiOKampanii = () => {
   return (
     <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[7032px] relative">
+      {/* BACKGROUND LAYER - Full-width backgrounds */}
+      <div className="absolute inset-0 w-screen pointer-events-none">
+        {/* Top Union SVG - Full width */}
+        <img
+          className="absolute w-screen h-[259px] top-0 left-0 object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyusz4fmWst0p/img/union-3.svg"
+        />
+
+        {/* Newsletter Union SVG - Full width */}
+        <img
+          className="absolute top-[5526px] left-0 w-screen h-[723px] object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyusz4fmWst0p/img/union-2.svg"
+        />
+      </div>
+
+      {/* CONTENT LAYER - Centered 1728px container */}
+      <div className="max-w-[1728px] mx-auto relative h-full">
       <Footer />
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
@@ -19,12 +38,6 @@ export const GadkiOKampanii = () => {
       <img
         className="absolute w-[102.47%] h-0 top-0 left-[-65.16%]"
         alt="Vector"
-      />
-
-      <img
-        className="absolute top-0 left-0 w-[1728px] h-[259px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyusz4fmWst0p/img/union-3.svg"
       />
 
       <img
@@ -79,12 +92,6 @@ export const GadkiOKampanii = () => {
         </span>
       </p>
 
-      <img
-        className="absolute top-[5526px] left-0 w-[1728px] h-[723px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyusz4fmWst0p/img/union-2.svg"
-      />
-
       <DivWrapper />
       <div className="absolute top-[4915px] left-[578px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
         Materiały
@@ -92,6 +99,7 @@ export const GadkiOKampanii = () => {
 
       <Div />
       <Newsletter />
+      </div>
     </div>
   );
 };

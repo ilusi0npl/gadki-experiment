@@ -7,24 +7,32 @@ import { MoreQuestions } from "./sections/MoreQuestions";
 
 export const GadkiFaq = () => {
   return (
-    <div className="bg-beige-200 w-full min-w-[1728px] h-[5731px] relative">
+    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[5731px] relative">
+      {/* BACKGROUND LAYER - Full-width backgrounds */}
+      <div className="absolute inset-0 w-screen pointer-events-none">
+        {/* Top Union SVG - Full width */}
+        <img
+          className="absolute w-screen h-[778px] top-0 left-0 object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyvrx3iXxUduh/img/union-3.svg"
+        />
+
+        {/* Newsletter Union SVG - Full width */}
+        <img
+          className="absolute top-[4153px] left-0 w-screen h-[723px] object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyvrx3iXxUduh/img/union-2.svg"
+        />
+      </div>
+
+      {/* CONTENT LAYER - Centered 1728px container */}
+      <div className="max-w-[1728px] mx-auto relative h-full">
       <Footer />
-      <img
-        className="absolute top-[4153px] left-0 w-[1728px] h-[723px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyvrx3iXxUduh/img/union-2.svg"
-      />
 
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
         alt="Group"
         src="https://c.animaapp.com/mhyvrx3iXxUduh/img/group.png"
-      />
-
-      <img
-        className="absolute top-0 left-0 w-[1728px] h-[778px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyvrx3iXxUduh/img/union-3.svg"
       />
 
       <img
@@ -74,6 +82,7 @@ export const GadkiFaq = () => {
         alt="Group"
         src="https://c.animaapp.com/mhyvrx3iXxUduh/img/group-1.png"
       />
+      </div>
     </div>
   );
 };

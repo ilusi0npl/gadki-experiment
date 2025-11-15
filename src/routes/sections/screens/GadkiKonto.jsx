@@ -5,18 +5,24 @@ import { FrameWrapper } from "./sections/FrameWrapper";
 
 export const GadkiKonto = () => {
   return (
-    <div className="bg-beige-200 w-full min-w-[1728px] h-[3060px] relative">
+    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[3060px] relative">
+      {/* BACKGROUND LAYER - Full-width backgrounds */}
+      <div className="absolute inset-0 w-screen pointer-events-none">
+        {/* Top Union SVG - Full width */}
+        <img
+          className="absolute w-screen h-[259px] top-0 left-0 object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyvw56jKmrjx6/img/union.svg"
+        />
+      </div>
+
+      {/* CONTENT LAYER - Centered 1728px container */}
+      <div className="max-w-[1728px] mx-auto relative h-full">
       <Footer />
       <img
         className="absolute w-[10.11%] h-[2.48%] top-[2.18%] left-[3.95%]"
         alt="Group"
         src="https://c.animaapp.com/mhyvw56jKmrjx6/img/group.png"
-      />
-
-      <img
-        className="top-0 h-[259px] absolute left-0 w-[1728px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyvw56jKmrjx6/img/union.svg"
       />
 
       <img
@@ -94,6 +100,7 @@ export const GadkiKonto = () => {
         alt="User"
         src="https://c.animaapp.com/mhyvw56jKmrjx6/img/user.svg"
       />
+      </div>
     </div>
   );
 };

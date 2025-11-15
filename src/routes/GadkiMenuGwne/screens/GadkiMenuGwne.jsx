@@ -3,7 +3,19 @@ import { Link } from "react-router-dom";
 
 export const GadkiMenuGwne = () => {
   return (
-    <div className="bg-fddsraspberry w-full min-w-[1728px] min-h-[1117px] relative">
+    <div className="bg-fddsraspberry overflow-hidden w-full min-w-[1728px] min-h-[1117px] relative">
+      {/* BACKGROUND LAYER - Full-width backgrounds */}
+      <div className="absolute inset-0 w-screen pointer-events-none">
+        {/* Bottom Union SVG - Full width */}
+        <img
+          className="absolute top-[1004px] left-0 w-screen h-[113px] object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyud8wmJZMflz/img/union.svg"
+        />
+      </div>
+
+      {/* CONTENT LAYER - Centered 1728px container */}
+      <div className="max-w-[1728px] mx-auto relative h-full">
       <Link to="/">
         <img
           className="absolute w-[9.49%] top-[calc(50.00%_-_494px)] left-[6.37%] h-[71px] cursor-pointer"
@@ -52,12 +64,6 @@ export const GadkiMenuGwne = () => {
         </Link>
       </div>
 
-      <img
-        className="absolute top-[1004px] left-0 w-[1728px] h-[113px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyud8wmJZMflz/img/union.svg"
-      />
-
       <Link to="/">
         <img
           className="absolute top-[77px] left-[380px] w-[146px] h-[67px] cursor-pointer"
@@ -77,6 +83,7 @@ export const GadkiMenuGwne = () => {
         alt="Group"
         src="https://c.animaapp.com/mhyud8wmJZMflz/img/group-5.png"
       />
+      </div>
     </div>
   );
 };

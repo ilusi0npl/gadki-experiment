@@ -2,8 +2,34 @@ import React from "react";
 
 export const GadkiDlaDzieci = () => {
   return (
-    <div className="bg-beige-200 w-full min-w-[1728px] h-[8970px] relative">
-      <footer className="absolute left-[calc(50.00%_-_864px)] bottom-0 w-[1728px] h-[485px] flex items-center justify-center bg-beige-100">
+    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[8970px] relative">
+      {/* BACKGROUND LAYER - Full-width backgrounds */}
+      <div className="absolute inset-0 w-screen pointer-events-none">
+        {/* Top Union SVG - Full width */}
+        <img
+          className="absolute w-screen h-[778px] top-0 left-0 object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-1.svg"
+        />
+
+        {/* Newsletter Union SVG - Full width */}
+        <img
+          className="absolute top-[7490px] left-0 w-screen h-[723px] object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-2.svg"
+        />
+
+        {/* Bottom Help Section Union SVG - Full width */}
+        <img
+          className="absolute top-[7886px] left-0 w-screen h-[723px] object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-3.svg"
+        />
+      </div>
+
+      {/* CONTENT LAYER - Centered 1728px container */}
+      <div className="max-w-[1728px] mx-auto relative h-full">
+      <footer className="absolute left-0 bottom-0 w-[1728px] h-[485px] flex items-center justify-center bg-beige-100">
         <div className="mt-[119.4px] h-[206.43px] ml-[-34px] w-[1146px] relative">
           <img
             className="absolute top-0 left-0 w-[177px] h-[77px]"
@@ -76,23 +102,12 @@ export const GadkiDlaDzieci = () => {
       </footer>
 
       <img
-        className="absolute top-[7490px] left-0 w-[1728px] h-[723px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-2.svg"
-      />
-
-      <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
         alt="Group"
         src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/group.png"
       />
 
       <div className="absolute top-[7734px] left-0 w-[1728px] h-[875px]">
-        <img
-          className="absolute top-[152px] left-0 w-[1728px] h-[723px]"
-          alt="Union"
-          src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-3.svg"
-        />
 
         <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px]">
           <p className="relative self-stretch mt-[-1.00px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-white text-4xl tracking-[-0.40px] leading-[54px]">
@@ -186,12 +201,6 @@ export const GadkiDlaDzieci = () => {
           src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union.png"
         />
       </div>
-
-      <img
-        className="absolute top-0 left-0 w-[1728px] h-[778px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-1.svg"
-      />
 
       <img
         className="absolute top-16 left-[110px] w-[164px] h-[71px]"
@@ -743,6 +752,7 @@ export const GadkiDlaDzieci = () => {
         sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
         Curabitur tempus urna at turpis.
       </p>
+      </div>
     </div>
   );
 };
