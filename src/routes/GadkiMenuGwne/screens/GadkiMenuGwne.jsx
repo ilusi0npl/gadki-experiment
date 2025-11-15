@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Header } from "../../../components/Header";
 
 export const GadkiMenuGwne = () => {
   useEffect(() => {
@@ -8,6 +9,8 @@ export const GadkiMenuGwne = () => {
 
   return (
     <div className="bg-fddsraspberry overflow-hidden w-full min-w-[1728px] min-h-[1117px] relative">
+      <Header />
+
       {/* BACKGROUND LAYER - Full-width backgrounds */}
       <div className="absolute inset-0 w-screen pointer-events-none">
         {/* Bottom Union SVG - Full width */}
@@ -25,14 +28,6 @@ export const GadkiMenuGwne = () => {
           className="absolute w-[9.49%] top-[calc(50.00%_-_494px)] left-[6.37%] h-[71px] cursor-pointer"
           alt="Group"
           src="https://c.animaapp.com/mhyud8wmJZMflz/img/group.png"
-        />
-      </Link>
-
-      <Link to="/">
-        <img
-          className="absolute top-16 right-[110px] w-[60px] h-[46px] cursor-pointer"
-          alt="Close"
-          src="https://c.animaapp.com/mhyud8wmJZMflz/img/layer-1.svg"
         />
       </Link>
 
