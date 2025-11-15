@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "../../../../hooks/useScrollReveal";
 
 export const DivWrapper = () => {
@@ -6,7 +7,7 @@ export const DivWrapper = () => {
 
   return (
     <div ref={ref} className={`flex w-[1180px] items-center gap-5 absolute top-[5131px] left-[274px] ${className}`}>
-      <div className="relative w-[380px] h-[480px] bg-white rounded-xl">
+      <Link to="/dla-dzieci" className="relative w-[380px] h-[480px] bg-white rounded-xl hover:shadow-lg transition-shadow cursor-pointer block">
         <div className="absolute top-[236px] left-[71px] w-[237px] h-[244px] flex gap-[16.3px]">
           <img
             className="mt-[25.1px] w-[105.92px] h-[219.1px] aspect-[0.48]"
@@ -24,9 +25,9 @@ export const DivWrapper = () => {
         <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
           Dla dzieci
         </div>
-      </div>
+      </Link>
 
-      <div className="relative w-[380px] h-[480px] bg-white rounded-xl">
+      <Link to="/dla-rodzicow-i-opiekunow" className="relative w-[380px] h-[480px] bg-white rounded-xl hover:shadow-lg transition-shadow cursor-pointer block">
         <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
           Dla rodziców
           <br />i opiekunów
@@ -45,9 +46,9 @@ export const DivWrapper = () => {
             src="https://c.animaapp.com/kiXkeqSn/img/tata-2x@2x.png"
           />
         </div>
-      </div>
+      </Link>
 
-      <div className="relative w-[380px] h-[480px] bg-white rounded-xl overflow-hidden">
+      <Link to="/dla-edukatorow" className="relative w-[380px] h-[480px] bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow cursor-pointer block">
         <div className="absolute top-[41px] left-[93px] w-[194px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
           Dla edukatorów
           <br />i nauczycieli
@@ -64,7 +65,7 @@ export const DivWrapper = () => {
           alt="Edukator obszar"
           src="https://c.animaapp.com/kiXkeqSn/img/edukator-obszar-roboczy-1-1.png"
         />
-      </div>
+      </Link>
     </div>
   );
 };

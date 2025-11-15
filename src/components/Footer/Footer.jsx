@@ -5,21 +5,25 @@ export const Footer = () => {
   return (
     <footer className="absolute left-[calc(50.00%_-_864px)] bottom-0 w-[1728px] h-[485px] flex items-center justify-center bg-beige-100">
       <div className="mt-[119.4px] h-[206.43px] ml-[-34px] w-[1146px] relative">
-        <Link to="/">
+        <Link
+          to="/"
+          className="absolute top-0 left-0 w-[177px] h-[77px] cursor-pointer hover:opacity-80 transition-opacity"
+          aria-label="Strona główna - Fundacja Dajemy Dzieciom Siłę"
+        >
           <img
-            className="absolute top-0 left-0 w-[177px] h-[77px] cursor-pointer"
+            className="w-full h-full"
             alt="Fundacja Dajemy Dzieciom Siłę"
             src="/img/fdds-logo-red.svg"
           />
         </Link>
 
-        <div className="absolute top-[182px] left-[calc(50.00%_-_273px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
+        <a href="#" className="absolute top-[182px] left-[calc(50.00%_-_273px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
           Polityka prywatności
-        </div>
+        </a>
 
-        <div className="absolute top-[182px] left-[calc(50.00%_+_27px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
+        <a href="#" className="absolute top-[182px] left-[calc(50.00%_+_27px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
           Deklaracja dostępności
-        </div>
+        </a>
 
         <p className="absolute top-[182px] left-[calc(50.00%_+_327px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
           <span className="tracking-[-0.03px]">Zaprojektował i wdrożył</span>
@@ -70,9 +74,9 @@ export const Footer = () => {
         </div>
 
         <img
-          className="absolute top-[184px] left-0 w-[172px] h-[21px]"
-          alt="Fundacja Dajemy Dzieciom Siłę"
-          src="/img/fdds-logo-small-red.svg"
+          className="absolute top-[184px] left-0 w-[290px] h-[40px]"
+          alt="Dofinansowane przez Unię Europejską"
+          src="/img/fdds-eu-logo.svg"
         />
       </div>
     </footer>
