@@ -10,7 +10,7 @@ import { SectionComponentNode } from "./sections/SectionComponentNode";
 export const GadkiStronaGwna = () => {
   return (
     <div
-      className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[9567px] relative"
+      className="bg-beige-200 overflow-hidden w-full min-w-[1728px] max-w-[1728px] h-[9567px] relative mx-auto"
       data-model-id="21:2"
     >
       <Footer />
