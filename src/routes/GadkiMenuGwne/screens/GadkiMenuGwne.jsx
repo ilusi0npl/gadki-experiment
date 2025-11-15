@@ -5,10 +5,33 @@ import { Header } from "../../../components/Header";
 export const GadkiMenuGwne = () => {
   useEffect(() => {
     document.title = "Menu - GADKI";
+
+    // Disable scrolling when menu is open
+    const scrollY = window.scrollY;
+    const html = document.documentElement;
+    const body = document.body;
+
+    html.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}px`;
+    body.style.width = '100%';
+    body.style.height = '100%';
+
+    // Re-enable scrolling when menu is closed
+    return () => {
+      html.style.overflow = '';
+      body.style.overflow = '';
+      body.style.position = '';
+      body.style.top = '';
+      body.style.width = '';
+      body.style.height = '';
+      window.scrollTo(0, scrollY);
+    };
   }, []);
 
   return (
-    <div className="bg-fddsraspberry overflow-hidden w-full min-w-[1728px] min-h-[1117px] relative">
+    <div className="bg-fddsraspberry overflow-hidden w-full min-w-[1728px] h-screen fixed inset-0 z-50">
       <Header />
 
       {/* BACKGROUND LAYER - Full-width backgrounds */}

@@ -1,14 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useMenu } from "../context/MenuContext";
 
 export const MenuOverlay = () => {
   const { isMenuOpen, closeMenu } = useMenu();
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Disable scrolling when menu is open
+      const scrollY = window.scrollY;
+      const html = document.documentElement;
+      const body = document.body;
+
+      html.style.overflow = 'hidden';
+      body.style.overflow = 'hidden';
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}px`;
+      body.style.width = '100%';
+      body.style.height = '100%';
+
+      // Re-enable scrolling when menu is closed
+      return () => {
+        html.style.overflow = '';
+        body.style.overflow = '';
+        body.style.position = '';
+        body.style.top = '';
+        body.style.width = '';
+        body.style.height = '';
+        window.scrollTo(0, scrollY);
+      };
+    }
+  }, [isMenuOpen]);
+
   if (!isMenuOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-40 w-screen h-screen overflow-y-auto">
+    <div className="fixed inset-0 z-40 w-screen h-screen overflow-hidden">
       {/* Menu Content */}
       <div className="bg-fddsraspberry w-full min-w-[1728px] min-h-screen relative">
         {/* BACKGROUND LAYER - Full-width backgrounds */}
