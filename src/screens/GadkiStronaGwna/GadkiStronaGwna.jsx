@@ -85,12 +85,6 @@ export const GadkiStronaGwna = () => {
           Zasady GADKI
         </div>
 
-        <img
-          className="absolute top-[3607px] left-[1074px] w-20 h-72"
-          alt="Frame"
-          src="https://c.animaapp.com/kiXkeqSn/img/frame-15.svg"
-        />
-
         <FrameWrapper />
         <img
           className="absolute top-[8374px] left-[1480px] w-[248px] h-[419px]"
