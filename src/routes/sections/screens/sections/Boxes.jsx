@@ -4,7 +4,7 @@ export const Boxes = () => {
   return (
     <div className="top-[1395px] left-[374px] flex flex-wrap w-[980px] items-start gap-[20px_20px] absolute">
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Imię{" "}
           </span>
@@ -14,7 +14,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Nazwisko{" "}
           </span>
@@ -24,7 +24,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Adres e-mail{" "}
           </span>
@@ -34,7 +34,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Numer telefonu{" "}
           </span>
@@ -44,7 +44,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="text-black text-xl tracking-[-0.22px] leading-5 relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal">
+        <p className="text-black text-xl tracking-[-0.22px] leading-5 relative w-fit mt-[-1.00px] font-lato font-normal">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Hasło{" "}
           </span>
@@ -54,7 +54,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Powtórz hasło{" "}
           </span>
@@ -64,7 +64,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Województwo{" "}
           </span>
@@ -74,7 +74,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Miejscowość{" "}
           </span>
@@ -84,7 +84,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center justify-between px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Zawód{" "}
           </span>
@@ -100,7 +100,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center justify-between px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-5">
           <span className="tracking-[-0.04px] text-[#1e1e1e] leading-8">
             Grupy wiekowe dzieci, z którymi pracujesz{" "}
           </span>
@@ -116,7 +116,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center justify-between px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl leading-5">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl leading-5">
           <span className="tracking-[0] text-[#1e1e1e] leading-8">
             Czy jesteś związany/a z placówką edukacyjną
           </span>
@@ -135,7 +135,7 @@ export const Boxes = () => {
       </div>
 
       <div className="flex w-[480px] items-center gap-2.5 px-6 py-[25px] relative bg-white rounded">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-xl tracking-[-0.22px] leading-8 whitespace-nowrap">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-xl tracking-[-0.22px] leading-8 whitespace-nowrap">
           Identyfikator placówki (REGON, numer RSPO)
         </p>
       </div>

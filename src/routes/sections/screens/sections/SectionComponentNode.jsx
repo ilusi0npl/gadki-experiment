@@ -18,13 +18,13 @@ export const SectionComponentNode = () => {
           />
         </div>
 
-        <div className="absolute top-10 left-[76px] w-[228px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-[#e83f4b] text-[40px] text-center tracking-[-0.44px] leading-[44px]">
+        <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-[#e83f4b] text-[40px] text-center tracking-[-0.44px] leading-[44px]">
           Dla dzieci
         </div>
       </div>
 
       <div className="relative w-[380px] h-[480px] bg-white rounded-xl">
-        <div className="absolute top-10 left-[76px] w-[228px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-[#e83f4b] text-[40px] text-center tracking-[-0.44px] leading-[44px]">
+        <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-[#e83f4b] text-[40px] text-center tracking-[-0.44px] leading-[44px]">
           Dla rodziców
           <br />i opiekunów
         </div>
@@ -57,7 +57,7 @@ export const SectionComponentNode = () => {
           src="https://c.animaapp.com/mhyvtq61XzwmaX/img/edukator-obszar-roboczy-1-1.png"
         />
 
-        <div className="absolute top-[41px] left-[93px] w-[194px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-[#e83f4b] text-[40px] text-center tracking-[-0.44px] leading-[44px]">
+        <div className="absolute top-[41px] left-[93px] w-[194px] font-happy-season font-semibold text-[#e83f4b] text-[40px] text-center tracking-[-0.44px] leading-[44px]">
           Dla edukatorów
           <br />i nauczycieli
         </div>

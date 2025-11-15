@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../../../components/Header";
 import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
@@ -9,6 +9,10 @@ import { FrameWrapper } from "./sections/FrameWrapper";
 import { Newsletter } from "./sections/Newsletter";
 
 export const GadkiDlaRodzicwI = () => {
+  useEffect(() => {
+    document.title = "Dla rodziców i opiekunów - GADKI";
+  }, []);
+
   return (
     <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[10131px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
@@ -45,7 +49,7 @@ export const GadkiDlaRodzicwI = () => {
         src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/frame-12.svg"
       />
 
-      <div className="absolute top-[329px] left-[474px] w-[781px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-white text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
+      <div className="absolute top-[329px] left-[474px] w-[781px] font-happy-season font-bold text-white text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
         Dla rodziców i opiekunów
       </div>
 
@@ -71,7 +75,7 @@ export const GadkiDlaRodzicwI = () => {
 
       <Newsletter />
       <div className="inline-flex absolute top-[476px] left-[calc(50.00%_-_208px)] bg-white items-center justify-center gap-2.5 px-6 py-5 rounded-[48px]">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
           Zaloguj się do Strefy Opiekuna
         </p>
       </div>
@@ -82,7 +86,7 @@ export const GadkiDlaRodzicwI = () => {
         src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/frame-44.svg"
       />
 
-      <div className="absolute top-[8026px] left-[278px] w-[1172px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
+      <div className="absolute top-[8026px] left-[278px] w-[1172px] font-happy-season font-semibold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
         Pozostałe
         <br />
         materiały
@@ -90,7 +94,7 @@ export const GadkiDlaRodzicwI = () => {
 
       <div className="inline-flex items-start justify-center gap-[265px] absolute top-[5356px] left-[376px]">
         <div className="inline-flex flex-col items-start gap-12 relative flex-[0_0_auto]">
-          <p className="relative w-[480px] mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl tracking-[-0.26px] leading-9">
+          <p className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
             Czy wiesz, że zajęcia&#34;Gadki z psem&#34; możesz przeprowadzić
             z dzieckiem w swoim domu? Przygotowaliśmy dla Ciebie plan działania,
             dzięki któremu poprzez zabawę nauczysz dziecko podstawowych zasad
@@ -101,11 +105,11 @@ export const GadkiDlaRodzicwI = () => {
 
       <div className="flex w-[1180px] items-center gap-[251px] absolute top-[5254px] left-[276px]">
         <div className="flex w-[878px] items-center gap-5 relative">
-          <div className="relative w-20 mt-[-1.00px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
+          <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
             06
           </div>
 
-          <div className="relative w-[473.01px] mt-[-1.00px] [font-family:'Happy_Season-Medium',Helvetica] font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
+          <div className="relative w-[473.01px] mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
             Filmy instruktażowe
           </div>
         </div>
@@ -125,13 +129,13 @@ export const GadkiDlaRodzicwI = () => {
             src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/file-save-24dp-1f1f1f-fill0-wght300-grad0-opsz24-1.svg"
           />
 
-          <div className="relative w-[480px] mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl tracking-[-0.26px] leading-9">
+          <div className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
             Film_instruktażowy_1
           </div>
         </div>
 
         <div className="flex w-[280px] relative bg-fddsraspberry items-center justify-center gap-2.5 px-6 py-5 rounded-[48px]">
-          <div className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Odtwórz
           </div>
         </div>
@@ -145,13 +149,13 @@ export const GadkiDlaRodzicwI = () => {
             src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/file-save-24dp-1f1f1f-fill0-wght300-grad0-opsz24-1-4.svg"
           />
 
-          <div className="relative w-[480px] mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl tracking-[-0.26px] leading-9">
+          <div className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
             Film_instruktażowy_2
           </div>
         </div>
 
         <div className="flex w-[280px] relative bg-fddsraspberry items-center justify-center gap-2.5 px-6 py-5 rounded-[48px]">
-          <div className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Odtwórz
           </div>
         </div>

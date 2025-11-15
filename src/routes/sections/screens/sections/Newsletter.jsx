@@ -11,13 +11,13 @@ export const Newsletter = () => {
         src="https://c.animaapp.com/mhyvtq61XzwmaX/img/gadek-2.png"
       />
 
-      <p className="absolute top-[225px] left-[100px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-white text-5xl tracking-[-0.53px] leading-[52.8px] whitespace-nowrap">
+      <p className="absolute top-[225px] left-[100px] font-happy-season font-bold text-white text-5xl tracking-[-0.53px] leading-[52.8px] whitespace-nowrap">
         Zapisz się do naszego newslettera
       </p>
 
       <div className="absolute top-[409px] left-[100px] w-5 h-5 bg-white rounded" />
 
-      <p className="absolute top-[405px] left-[132px] [font-family:'Lato',Helvetica] font-normal text-white text-base tracking-[-0.18px] leading-6">
+      <p className="absolute top-[405px] left-[132px] font-lato font-normal text-white text-base tracking-[-0.18px] leading-6">
         <span className="text-[#ffffff] tracking-[-0.03px]">
           Zgadzam się na otrzymywanie newslettera Fundacji Dajemy Dzieciom
           Siłę oraz akceptuję{" "}
@@ -43,20 +43,20 @@ export const Newsletter = () => {
       <div className="inline-flex items-center gap-[60px] absolute top-[301px] left-[100px]">
         <div className="inline-flex items-center gap-10 relative flex-[0_0_auto]">
           <div className="flex w-[300px] items-center justify-center gap-2.5 px-[60px] py-[25px] relative bg-white rounded">
-            <div className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap">
               Imię
             </div>
           </div>
 
           <div className="inline-flex items-center justify-center gap-2.5 px-[60px] py-[25px] relative flex-[0_0_auto] bg-white rounded">
-            <div className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap">
+            <div className="relative w-fit mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap">
               Twój adres e-mail
             </div>
           </div>
         </div>
 
         <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative rounded-[48px] border-2 border-solid border-[#ffffff]">
-          <div className="relative w-fit mt-[-2.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+          <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
             Zapisz się
           </div>
         </div>

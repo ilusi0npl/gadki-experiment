@@ -13,58 +13,58 @@ export const Footer = () => {
           />
         </Link>
 
-        <div className="absolute top-[182px] left-[calc(50.00%_-_273px)] [font-family:'Lato',Helvetica] font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
+        <div className="absolute top-[182px] left-[calc(50.00%_-_273px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
           Polityka prywatności
         </div>
 
-        <div className="absolute top-[182px] left-[calc(50.00%_+_27px)] [font-family:'Lato',Helvetica] font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
+        <div className="absolute top-[182px] left-[calc(50.00%_+_27px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap cursor-pointer hover:opacity-80">
           Deklaracja dostępności
         </div>
 
-        <p className="absolute top-[182px] left-[calc(50.00%_+_327px)] [font-family:'Lato',Helvetica] font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
+        <p className="absolute top-[182px] left-[calc(50.00%_+_327px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
           <span className="tracking-[-0.03px]">Zaprojektował i wdrożył</span>
 
           <span className="font-bold tracking-[-0.03px]"> cięty język|</span>
         </p>
 
         <div className="flex flex-col w-[122px] items-start gap-2.5 absolute top-[7px] left-[300px]">
-          <div className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
+          <div className="relative w-fit mt-[-1.00px] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
             Kontakt
           </div>
 
-          <a href="mailto:gadki@fdds.pl" className="relative self-stretch [font-family:'Lato',Helvetica] font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
+          <a href="mailto:gadki@fdds.pl" className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
             gadki@fdds.pl
           </a>
         </div>
 
         <div className="flex flex-col w-[178px] items-start gap-2.5 absolute top-1.5 left-[600px]">
-          <Link to="/dla-dzieci" className="relative self-stretch mt-[-1.00px] [font-family:'Lato',Helvetica] font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
+          <Link to="/dla-dzieci" className="relative self-stretch mt-[-1.00px] font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
             Dla dzieci
           </Link>
 
-          <Link to="/dla-rodzicow-i-opiekunow" className="relative self-stretch [font-family:'Lato',Helvetica] font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
+          <Link to="/dla-rodzicow-i-opiekunow" className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
             Dla rodziców i opiekunów
           </Link>
 
-          <Link to="/dla-edukatorow" className="relative self-stretch [font-family:'Lato',Helvetica] font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
+          <Link to="/dla-edukatorow" className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
             Dla edukatorów
           </Link>
         </div>
 
         <div className="inline-flex flex-col items-start gap-2.5 absolute top-1.5 left-[901px]">
-          <Link to="/logowanie" className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap hover:opacity-80">
+          <Link to="/logowanie" className="relative w-fit mt-[-1.00px] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap hover:opacity-80">
             Logowanie/Rejestracja
           </Link>
 
-          <Link to="/o-kampanii" className="relative self-stretch [font-family:'Lato',Helvetica] font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
+          <Link to="/o-kampanii" className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
             O programie
           </Link>
 
-          <Link to="/faq" className="relative self-stretch [font-family:'Lato',Helvetica] font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
+          <Link to="/faq" className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
             FAQ
           </Link>
 
-          <Link to="/dla-rodzicow-i-opiekunow" className="relative self-stretch [font-family:'Lato',Helvetica] font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
+          <Link to="/dla-rodzicow-i-opiekunow" className="relative self-stretch font-lato font-medium text-fddsraspberry text-base tracking-[-0.18px] leading-6 hover:opacity-80">
             Для батьків
           </Link>
         </div>

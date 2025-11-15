@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../../../components/Header";
 import { BoxAdresEmail } from "./sections/BoxAdresEmail";
 import { Boxes } from "./sections/Boxes";
@@ -9,6 +9,10 @@ import { Frame } from "./sections/Frame";
 import { FrameWrapper } from "./sections/FrameWrapper";
 
 export const GadkiLogowanie = () => {
+  useEffect(() => {
+    document.title = "Logowanie/Rejestracja - GADKI";
+  }, []);
+
   return (
     <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[4053px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
@@ -51,7 +55,7 @@ export const GadkiLogowanie = () => {
 
       <Frame />
       <div className="flex w-[262px] h-[71px] items-center justify-center gap-2.5 px-6 py-5 absolute top-[2269px] left-[1083px] bg-[#e83f4b] rounded-[48px]">
-        <div className="relative w-fit mt-[-3.50px] mb-[-1.50px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <div className="relative w-fit mt-[-3.50px] mb-[-1.50px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
           Załóż konto
         </div>
       </div>
@@ -59,7 +63,7 @@ export const GadkiLogowanie = () => {
       <div className="inline-flex items-end gap-3 absolute top-[2201px] left-[374px]">
         <div className="relative w-5 h-5 bg-white rounded border border-solid border-[#1e1e1e]" />
 
-        <p className="text-[#e83f4b] relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
+        <p className="text-[#e83f4b] relative w-fit mt-[-1.00px] font-lato font-normal text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
           zgoda na przetwarzanie danych osobowych w celu realizacji programu
           (RODO) *
         </p>
@@ -68,7 +72,7 @@ export const GadkiLogowanie = () => {
       <div className="inline-flex items-end gap-3 absolute top-[2245px] left-[374px]">
         <div className="relative w-5 h-5 bg-white rounded border border-solid border-[#1e1e1e]" />
 
-        <p className="text-black relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-normal text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
+        <p className="text-black relative w-fit mt-[-1.00px] font-lato font-normal text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
           zgoda na otrzymywanie materiałów drogą elektroniczną
         </p>
       </div>
@@ -76,7 +80,7 @@ export const GadkiLogowanie = () => {
       <FrameWrapper />
       <Boxes />
       <BoxAdresEmail />
-      <div className="absolute top-[452px] left-[632px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px] whitespace-nowrap">
+      <div className="absolute top-[452px] left-[632px] font-happy-season font-bold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px] whitespace-nowrap">
         Masz już konto?
       </div>
 

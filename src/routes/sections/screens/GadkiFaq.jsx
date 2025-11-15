@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../../../components/Header";
 import { DivWrapper } from "./sections/DivWrapper";
 import { Footer } from "./sections/Footer";
@@ -7,6 +7,10 @@ import { FrameWrapper } from "./sections/FrameWrapper";
 import { MoreQuestions } from "./sections/MoreQuestions";
 
 export const GadkiFaq = () => {
+  useEffect(() => {
+    document.title = "Często zadawane pytania - GADKI";
+  }, []);
+
   return (
     <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[5731px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
@@ -45,12 +49,12 @@ export const GadkiFaq = () => {
         src="https://c.animaapp.com/mhyvrx3iXxUduh/img/frame-12.svg"
       />
 
-      <div className="absolute top-[329px] left-[474px] w-[781px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-white text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
+      <div className="absolute top-[329px] left-[474px] w-[781px] font-happy-season font-bold text-white text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
         Często zadawane pytania
       </div>
 
       <FrameWrapper />
-      <p className="absolute top-[3627px] left-[574px] w-[580px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
+      <p className="absolute top-[3627px] left-[574px] w-[580px] font-lato font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
         Na tej stronie znajdują się informacje o problemie wykorzystywania
         seksualnego dzieci oraz przyjazne dla dzieci materiały, które ułatwią
         Ci rozmowę.
@@ -58,7 +62,7 @@ export const GadkiFaq = () => {
 
       <DivWrapper />
       <MoreQuestions />
-      <div className="absolute top-[3366px] left-[575px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-[#e83f4b] text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
+      <div className="absolute top-[3366px] left-[575px] font-happy-season font-semibold text-[#e83f4b] text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
         Materiały
       </div>
 

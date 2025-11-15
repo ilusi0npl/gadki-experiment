@@ -18,13 +18,13 @@ export const DivWrapper = () => {
           />
         </div>
 
-        <div className="absolute top-10 left-[76px] w-[228px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
+        <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
           Dla dzieci
         </div>
       </div>
 
       <div className="relative w-[380px] h-[480px] bg-white rounded-xl">
-        <div className="absolute top-10 left-[76px] w-[228px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
+        <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
           Dla rodziców
           <br />i opiekunów
         </div>
@@ -45,7 +45,7 @@ export const DivWrapper = () => {
       </div>
 
       <div className="relative w-[380px] h-[480px] bg-white rounded-xl overflow-hidden">
-        <div className="absolute top-[41px] left-[93px] w-[194px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
+        <div className="absolute top-[41px] left-[93px] w-[194px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44.0px]">
           Dla edukatorów
           <br />i nauczycieli
         </div>

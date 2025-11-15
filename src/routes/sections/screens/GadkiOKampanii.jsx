@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../../../components/Header";
 import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
@@ -8,6 +8,10 @@ import { FrameWrapper } from "./sections/FrameWrapper";
 import { Newsletter } from "./sections/Newsletter";
 
 export const GadkiOKampanii = () => {
+  useEffect(() => {
+    document.title = "O programie - GADKI";
+  }, []);
+
   return (
     <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[7032px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
@@ -50,7 +54,7 @@ export const GadkiOKampanii = () => {
 
       <Frame />
       <FrameWrapper />
-      <div className="absolute top-[3553px] left-[474px] w-[473px] [font-family:'Happy_Season-Medium',Helvetica] font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
+      <div className="absolute top-[3553px] left-[474px] w-[473px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
         Materiały źródłowe
       </div>
 
@@ -60,7 +64,7 @@ export const GadkiOKampanii = () => {
         src="https://c.animaapp.com/mhyusz4fmWst0p/img/line-2.svg"
       />
 
-      <p className="absolute top-[3673px] left-[476px] w-[678px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl tracking-[-0.26px] leading-9">
+      <p className="absolute top-[3673px] left-[476px] w-[678px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
         <span className="font-bold tracking-[-0.06px] underline">
           Child abuse in Europe{" "}
         </span>
@@ -70,7 +74,7 @@ export const GadkiOKampanii = () => {
         </span>
       </p>
 
-      <p className="absolute top-[3731px] left-[476px] w-[678px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl tracking-[-0.26px] leading-9">
+      <p className="absolute top-[3731px] left-[476px] w-[678px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
         <span className="font-bold tracking-[-0.06px] underline">
           Wykorzystywanie seksualne dzieci: wyniki Ogólnopolskiej diagnozy
           problemu przemocy wobec dzieci
@@ -83,7 +87,7 @@ export const GadkiOKampanii = () => {
       </p>
 
       <DivWrapper />
-      <div className="absolute top-[4915px] left-[578px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
+      <div className="absolute top-[4915px] left-[578px] font-happy-season font-semibold text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
         Materiały
       </div>
 

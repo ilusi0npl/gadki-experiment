@@ -1,6 +1,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Happy Season Font */
+@font-face {
+  font-family: 'Happy Season';
+  src: url('/fonts/happyseason-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Happy Season';
+  src: url('/fonts/happyseason-bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Happy Season';
+  src: url('/fonts/happyseason-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer components {
   .all-\[unset\] {
     all: unset;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../../components/Header";
 import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
@@ -9,6 +9,10 @@ import { Group } from "./sections/Group";
 import { SectionComponentNode } from "./sections/SectionComponentNode";
 
 export const GadkiStronaGwna = () => {
+  useEffect(() => {
+    document.title = "GADKI - program wzmacniania bezpieczeństwa dzieci";
+  }, []);
+
   return (
     <div
       className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[9567px] relative"
@@ -61,7 +65,7 @@ export const GadkiStronaGwna = () => {
           src="/img/vector.png"
         />
 
-        <p className="absolute top-[3262px] left-[calc(50.00%_-_190px)] w-[380px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
+        <p className="absolute top-[3262px] left-[calc(50.00%_-_190px)] w-[380px] font-lato font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
           <span className="tracking-[-0.06px]">
             Każda z liter wchodzących w skład słowa{" "}
           </span>
@@ -77,8 +81,8 @@ export const GadkiStronaGwna = () => {
 
         <Frame />
         <Group />
-        <div className="absolute top-[2963px] left-[274px] w-[1172px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px]">
-          Zasady
+        <div className="absolute top-[2963px] left-[274px] w-[1172px] font-happy-season font-semibold text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px]">
+          Zasady GADKI
         </div>
 
         <img
@@ -94,11 +98,11 @@ export const GadkiStronaGwna = () => {
           src="https://c.animaapp.com/kiXkeqSn/img/group-11@2x.png"
         />
 
-        <div className="absolute top-[4703px] left-[576px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
+        <div className="absolute top-[4703px] left-[576px] font-happy-season font-semibold text-fddsraspberry text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
           Materiały
         </div>
 
-        <p className="absolute top-[4963px] left-[574px] w-[580px] [font-family:'Lato',Helvetica] font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
+        <p className="absolute top-[4963px] left-[574px] w-[580px] font-lato font-normal text-black text-2xl text-center tracking-[-0.26px] leading-9">
           Na tej stronie znajdują się informacje o problemie wykorzystywania
           seksualnego dzieci oraz przyjazne dla dzieci materiały, które ułatwią
           Ci rozmowę.
@@ -126,7 +130,7 @@ export const GadkiStronaGwna = () => {
             src="https://c.animaapp.com/kiXkeqSn/img/frame-12.svg"
           />
 
-          <div className="relative self-stretch [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-white text-[44px] text-center tracking-[-0.48px] leading-[66px]">
+          <div className="relative self-stretch font-happy-season font-semibold text-white text-[44px] text-center tracking-[-0.48px] leading-[66px]">
             Program wzmacniania bezpieczeństwa dzieci
           </div>
         </div>
@@ -195,8 +199,6 @@ export const GadkiStronaGwna = () => {
           alt="Group"
           src="https://c.animaapp.com/kiXkeqSn/img/group-13@2x.png"
         />
-
-        <div className="absolute top-[3272px] left-[274px] w-[1180px] h-[190px] bg-[#d9d9d9]" />
       </div>
     </div>
   );

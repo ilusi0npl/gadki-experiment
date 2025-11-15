@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../../../components/Header";
 import { Footer } from "./sections/Footer";
 import { Frame } from "./sections/Frame";
 import { FrameWrapper } from "./sections/FrameWrapper";
 
 export const GadkiKonto = () => {
+  useEffect(() => {
+    document.title = "Moje konto - GADKI";
+  }, []);
+
   return (
     <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[3060px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
@@ -42,21 +46,21 @@ export const GadkiKonto = () => {
       />
 
       <div className="inline-flex items-center gap-5 absolute top-[821px] left-[274px]">
-        <div className="relative w-20 mt-[-1.00px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-[#e83f4b] text-4xl text-center tracking-[-0.40px] leading-[54px]">
+        <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-[#e83f4b] text-4xl text-center tracking-[-0.40px] leading-[54px]">
           01
         </div>
 
-        <div className="relative w-[473.01px] mt-[-1.00px] [font-family:'Happy_Season-Medium',Helvetica] font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
+        <div className="relative w-[473.01px] mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
           Zaświadczenia po realizacji zajęć
         </div>
       </div>
 
       <div className="inline-flex items-center gap-5 absolute top-[1123px] left-[274px]">
-        <div className="relative w-20 mt-[-1.00px] [font-family:'Happy_Season-Bold',Helvetica] font-bold text-[#e83f4b] text-4xl text-center tracking-[-0.40px] leading-[54px]">
+        <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-[#e83f4b] text-4xl text-center tracking-[-0.40px] leading-[54px]">
           02
         </div>
 
-        <div className="relative w-[473.01px] mt-[-1.00px] [font-family:'Happy_Season-Medium',Helvetica] font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
+        <div className="relative w-[473.01px] mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
           Zaświadczenia dla szkoły/przedszkola
         </div>
       </div>
@@ -74,13 +78,13 @@ export const GadkiKonto = () => {
       />
 
       <div className="inline-flex items-center justify-center gap-2.5 px-6 py-5 absolute top-[907px] left-[374px] bg-[#e83f4b] rounded-[48px]">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
           Wypełnij formularz i otrzymaj zaświadzczenie
         </p>
       </div>
 
       <div className="inline-flex items-center justify-center gap-2.5 px-6 py-5 absolute top-[1209px] left-[374px] bg-[#e83f4b] rounded-[48px]">
-        <p className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <p className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
           Wypełnij formularz i otrzymaj certyfikat
         </p>
       </div>

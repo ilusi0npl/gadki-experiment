@@ -15,11 +15,11 @@ export const SectionComponentNode = () => {
         src="https://c.animaapp.com/kiXkeqSn/img/gadek.svg"
       />
 
-      <div className="[font-family:'Happy_Season-Semibold',Helvetica] font-normal text-8xl text-center tracking-[-1.06px] leading-[105.6px] relative self-stretch text-fddsraspberry">
+      <div className="font-happy-season font-semibold text-8xl text-center tracking-[-1.06px] leading-[105.6px] relative self-stretch text-fddsraspberry">
         O nas
       </div>
 
-      <p className="relative w-[480px] [font-family:'Lato',Helvetica] font-normal text-transparent text-2xl text-center tracking-[-0.26px] leading-9">
+      <p className="relative w-[480px] font-lato font-normal text-transparent text-2xl text-center tracking-[-0.26px] leading-9">
         <span className="font-semibold text-[#e83f4b] tracking-[-0.06px]">
           W Fundacji Dajemy Dzieciom Siłę od ponad 30 lat chronimy dzieci przed
           przemocą i wykorzystaniem seksualnym.
@@ -36,7 +36,7 @@ export const SectionComponentNode = () => {
       </p>
 
       <div className="flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative flex-[0_0_auto] bg-fddsraspberry rounded-[48px]">
-        <div className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
+        <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
           Poznaj nasze działania
         </div>
       </div>

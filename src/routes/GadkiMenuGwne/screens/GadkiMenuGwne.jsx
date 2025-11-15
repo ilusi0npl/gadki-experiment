@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const GadkiMenuGwne = () => {
+  useEffect(() => {
+    document.title = "Menu - GADKI";
+  }, []);
+
   return (
     <div className="bg-fddsraspberry overflow-hidden w-full min-w-[1728px] min-h-[1117px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
@@ -33,33 +37,33 @@ export const GadkiMenuGwne = () => {
       </Link>
 
       <div className="flex flex-col w-[744px] items-start gap-[26px] absolute top-[300px] left-[374px]">
-        <Link to="/dla-dzieci" className="relative self-stretch mt-[-1.00px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity">
+        <Link to="/dla-dzieci" className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity">
           Dla dzieci
         </Link>
 
-        <Link to="/dla-rodzicow-i-opiekunow" className="relative self-stretch [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity">
+        <Link to="/dla-rodzicow-i-opiekunow" className="relative self-stretch font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity">
           Dla rodziców i opiekunów
         </Link>
 
-        <Link to="/dla-edukatorow" className="relative w-fit mr-[-48.14px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-white text-8xl tracking-[-1.06px] leading-[105.6px] whitespace-nowrap hover:opacity-80 transition-opacity">
+        <Link to="/dla-edukatorow" className="relative w-fit mr-[-48.14px] font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] whitespace-nowrap hover:opacity-80 transition-opacity">
           Dla edukatorów i nauczycieli
         </Link>
       </div>
 
       <div className="inline-flex items-center gap-12 absolute top-[764px] left-[374px]">
-        <Link to="/o-kampanii" className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
+        <Link to="/o-kampanii" className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
           O programie
         </Link>
 
-        <Link to="/faq" className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
+        <Link to="/faq" className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
           FAQ
         </Link>
 
-        <Link to="/logowanie" className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
+        <Link to="/logowanie" className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
           Logowanie/Rejestracja
         </Link>
 
-        <Link to="/dla-rodzicow-i-opiekunow" className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
+        <Link to="/dla-rodzicow-i-opiekunow" className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity">
           Для батьків
         </Link>
       </div>
