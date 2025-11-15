@@ -115,11 +115,18 @@ export const GadkiStronaGwna = () => {
         </p>
 
         <DivWrapper />
-        <img
-          className="absolute top-[866px] left-[274px] w-[1180px] h-[622px]"
-          alt="Frame"
-          src="https://c.animaapp.com/kiXkeqSn/img/frame-44.svg"
-        />
+
+        {/* YouTube Video */}
+        <div className="absolute top-[866px] left-[274px] w-[1180px] h-[622px]">
+          <iframe
+            className="w-full h-full rounded-xl"
+            src="https://www.youtube.com/embed/PW-n6UtOe0E"
+            title="Gadki - Program wzmacniania bezpieczeństwa dzieci"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
 
         <Div />
         <div className="flex flex-col w-[580px] items-start gap-3 absolute top-[429px] left-[574px]">
