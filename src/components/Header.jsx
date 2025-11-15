@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useMenu } from "../context/MenuContext";
 
 export const Header = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
-  const isMenuPage = location.pathname === "/menu";
+  const { isMenuOpen, openMenu, closeMenu } = useMenu();
 
   const handleMenuClick = (e) => {
     e.preventDefault();
     setIsTransitioning(true);
     setTimeout(() => {
-      navigate("/menu");
+      openMenu();
       setIsTransitioning(false);
     }, 300);
   };
 
   const handleCloseClick = (e) => {
-    // Zamknięcie menu bez efektu - natychmiastowa nawigacja
+    e.preventDefault();
+    closeMenu();
   };
 
   return (
@@ -34,11 +34,10 @@ export const Header = () => {
 
           <div className="relative w-[60px] h-[46px]">
             {/* Hamburger button */}
-            <Link
-              to="/menu"
+            <button
               onClick={handleMenuClick}
-              className={`absolute inset-0 transition-all duration-300 ${
-                isMenuPage || isTransitioning ? "opacity-0 scale-50 pointer-events-none" : "opacity-100 scale-100"
+              className={`absolute inset-0 bg-transparent border-0 p-0 transition-all duration-300 ${
+                isMenuOpen || isTransitioning ? "opacity-0 scale-50 pointer-events-none" : "opacity-100 scale-100"
               }`}
             >
               <img
@@ -46,14 +45,13 @@ export const Header = () => {
                 alt="Menu"
                 src="https://c.animaapp.com/mhyvw56jKmrjx6/img/layer-1.svg"
               />
-            </Link>
+            </button>
 
             {/* Close button */}
-            <Link
-              to="/"
+            <button
               onClick={handleCloseClick}
-              className={`absolute inset-0 transition-all duration-300 ${
-                isMenuPage ? "opacity-100 scale-100" : "opacity-0 scale-50 pointer-events-none"
+              className={`absolute inset-0 bg-transparent border-0 p-0 transition-all duration-300 ${
+                isMenuOpen ? "opacity-100 scale-100" : "opacity-0 scale-50 pointer-events-none"
               }`}
             >
               <img
@@ -61,7 +59,7 @@ export const Header = () => {
                 alt="Close"
                 src="https://c.animaapp.com/mhyud8wmJZMflz/img/layer-1.svg"
               />
-            </Link>
+            </button>
           </div>
         </div>
       </div>
