@@ -22,6 +22,15 @@ module.exports = {
         'lato': ['Lato', 'sans-serif'],
         'happy-season': ['Happy Season', 'cursive'],
       },
+      keyframes: {
+        'gentle-pulse': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
+      },
+      animation: {
+        'gentle-pulse': 'gentle-pulse 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

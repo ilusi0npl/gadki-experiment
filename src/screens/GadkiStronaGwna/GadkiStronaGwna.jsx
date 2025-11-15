@@ -87,7 +87,7 @@ export const GadkiStronaGwna = () => {
 
         <FrameWrapper />
         <img
-          className="absolute top-[8374px] left-[1480px] w-[248px] h-[419px]"
+          className="absolute top-[8374px] left-[1480px] w-[248px] h-[419px] animate-gentle-pulse"
           alt="Group"
           src="https://c.animaapp.com/kiXkeqSn/img/group-11@2x.png"
         />
@@ -129,7 +129,7 @@ export const GadkiStronaGwna = () => {
           </div>
         </div>
 
-        <div className="absolute top-[545px] left-[1266px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1]">
+        <div className="absolute top-[545px] left-[1266px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1] animate-gentle-pulse">
           <img
             className="mt-[30px] w-[180px] h-[150px] aspect-[0.31] object-cover"
             alt="Chopak"
@@ -137,7 +137,7 @@ export const GadkiStronaGwna = () => {
           />
         </div>
 
-        <div className="absolute top-56 left-[1176px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1]">
+        <div className="absolute top-56 left-[1176px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1] animate-gentle-pulse">
           <img
             className="mt-5 w-[177px] h-40 ml-[3px] aspect-[0.3] object-cover"
             alt="Tata"
@@ -145,7 +145,7 @@ export const GadkiStronaGwna = () => {
           />
         </div>
 
-        <div className="absolute top-20 left-[774px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1]">
+        <div className="absolute top-20 left-[774px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1] animate-gentle-pulse">
           <img
             className="mt-6 w-[142px] h-[156px] ml-[38px] aspect-[0.96] object-cover"
             alt="Gadek"
@@ -153,7 +153,7 @@ export const GadkiStronaGwna = () => {
           />
         </div>
 
-        <div className="absolute top-[155px] left-[374px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1]">
+        <div className="absolute top-[155px] left-[374px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1] animate-gentle-pulse">
           <img
             className="mt-[17px] w-[177px] h-[163px] ml-0.5 aspect-[0.28] object-cover"
             alt="Mama"
@@ -161,7 +161,7 @@ export const GadkiStronaGwna = () => {
           />
         </div>
 
-        <div className="absolute top-[618px] left-[274px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1]">
+        <div className="absolute top-[618px] left-[274px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden aspect-[1] animate-gentle-pulse">
           <img
             className="mt-7 w-[165px] h-[152px] ml-2 aspect-[0.31] object-cover"
             alt="Dziewczyna"
@@ -177,19 +177,19 @@ export const GadkiStronaGwna = () => {
 
         <SectionComponentNode />
         <img
-          className="absolute top-[1978px] left-0 w-[318px] h-[481px]"
+          className="absolute top-[1978px] left-0 w-[318px] h-[481px] animate-gentle-pulse"
           alt="Group"
           src="https://c.animaapp.com/kiXkeqSn/img/group-4.png"
         />
 
         <img
-          className="absolute top-[1691px] left-[1391px] w-[206px] h-[343px]"
+          className="absolute top-[1691px] left-[1391px] w-[206px] h-[343px] animate-gentle-pulse"
           alt="Vector"
           src="https://c.animaapp.com/kiXkeqSn/img/vector-6@2x.png"
         />
 
         <img
-          className="absolute top-[5946px] left-[27px] w-[483px] h-[374px]"
+          className="absolute top-[5946px] left-[27px] w-[483px] h-[374px] animate-gentle-pulse"
           alt="Group"
           src="https://c.animaapp.com/kiXkeqSn/img/group-13@2x.png"
         />

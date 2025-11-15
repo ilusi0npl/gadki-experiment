@@ -4,13 +4,13 @@ export const SectionComponentNode = () => {
   return (
     <div className="flex flex-col w-[655px] items-center gap-12 absolute top-[5938px] left-[535px]">
       <img
-        className="absolute top-[433px] left-[927px] w-[266px] h-[337px]"
+        className="absolute top-[433px] left-[927px] w-[266px] h-[337px] animate-gentle-pulse"
         alt="Vector"
         src="https://c.animaapp.com/kiXkeqSn/img/vector-14@2x.png"
       />
 
       <img
-        className="relative w-[180px] h-[180px] aspect-[1]"
+        className="relative w-[180px] h-[180px] aspect-[1] animate-gentle-pulse"
         alt="Gadek"
         src="https://c.animaapp.com/kiXkeqSn/img/gadek.svg"
       />
