@@ -3,18 +3,6 @@ import React from "react";
 export const FrameWrapper = () => {
   return (
     <div className="absolute top-[8285px] left-0 w-[1728px] h-[913px]">
-      <img
-        className="absolute top-px left-0 w-[1728px] h-[723px]"
-        alt="Union"
-        src="https://c.animaapp.com/kiXkeqSn/img/union-2.svg"
-      />
-
-      <img
-        className="absolute top-[151px] left-px w-[1728px] h-[723px]"
-        alt="Union"
-        src="https://c.animaapp.com/kiXkeqSn/img/union-3.svg"
-      />
-
       <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px]">
         <p className="relative self-stretch mt-[-1.00px] [font-family:'Happy_Season-Semibold',Helvetica] font-normal text-white text-4xl tracking-[-0.40px] leading-[54px]">
           Jeżeli jesteś dzieckiem i trudno Ci porozmawiać z osobą dorosłą
