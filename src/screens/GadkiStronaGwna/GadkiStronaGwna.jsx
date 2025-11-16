@@ -200,7 +200,7 @@ export const GadkiStronaGwna = () => {
         />
 
         <img
-          className="absolute top-[5946px] left-[27px] w-[483px] h-[374px] animate-gentle-pulse"
+          className="absolute top-[5946px] left-[27px] w-[483px] h-[374px]"
           alt="Group"
           src="https://c.animaapp.com/kiXkeqSn/img/group-13@2x.png"
         />

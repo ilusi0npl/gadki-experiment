@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MenuProvider } from "./context/MenuContext";
 import { MenuOverlay } from "./components/MenuOverlay";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { GadkiStronaGwna } from "./screens/GadkiStronaGwna";
 import { GadkiOKampanii } from "./routes/sections/screens/GadkiOKampanii";
 import { GadkiDlaDzieci } from "./routes/GadkiDlaDzieci/screens/GadkiDlaDzieci";
@@ -14,6 +15,7 @@ import { GadkiKonto } from "./routes/sections/screens/GadkiKonto";
 export const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <MenuProvider>
         <MenuOverlay />
         <Routes>

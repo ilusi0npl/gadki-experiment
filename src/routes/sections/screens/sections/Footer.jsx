@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -53,9 +54,9 @@ export const Footer = () => {
             Logowanie/Rejestracja
           </div>
 
-          <div className="relative self-stretch font-lato font-medium text-[#e83f4b] text-base tracking-[-0.18px] leading-6">
+          <Link to="/o-kampanii" className="relative self-stretch font-lato font-medium text-[#e83f4b] text-base tracking-[-0.18px] leading-6 hover:underline">
             O programie
-          </div>
+          </Link>
 
           <div className="relative self-stretch font-lato font-medium text-[#e83f4b] text-base tracking-[-0.18px] leading-6">
             FAQ
