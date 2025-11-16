@@ -26,7 +26,7 @@ export const GadkiStronaGwna = () => {
 
   return (
     <div
-      className="bg-beige-200 w-full min-w-[1728px] relative min-h-screen"
+      className="bg-beige-200 w-full relative min-h-screen overflow-x-hidden"
       data-model-id="21:2"
     >
       {/* DECORATION LAYER - Full-width backgrounds & decorations */}
@@ -60,8 +60,8 @@ export const GadkiStronaGwna = () => {
         />
       </div>
 
-      {/* CONTENT LAYER - Centered 1728px container */}
-      <div className="max-w-[1728px] mx-auto relative z-10">
+      {/* CONTENT LAYER - Full width container */}
+      <div className="w-full relative z-10">
         <Header />
 
         {/* TOP SECTION - Absolute positioned elements (everything before FAQ) */}
