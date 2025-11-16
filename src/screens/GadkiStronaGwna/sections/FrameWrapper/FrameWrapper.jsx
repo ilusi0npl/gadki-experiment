@@ -5,8 +5,9 @@ export const FrameWrapper = () => {
   const { ref, className } = useScrollReveal();
 
   return (
-    <div ref={ref} className={`absolute top-[8285px] left-0 w-[1728px] h-[913px] ${className}`}>
-      <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px]">
+    <div ref={ref} className={`relative w-full h-[913px] ${className}`}>
+      <div className="flex justify-between items-start max-w-[1728px] mx-auto px-[374px] pt-[137px] relative">
+      <div className="flex flex-col w-[380px] items-start gap-12">
         <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
           Jeżeli jesteś dzieckiem i trudno Ci porozmawiać z osobą dorosłą
           z Twojego otoczenia...
@@ -45,7 +46,7 @@ export const FrameWrapper = () => {
         </div>
       </div>
 
-      <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[974px]">
+      <div className="flex flex-col w-[380px] items-start gap-12">
         <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
           Jesteś rodzicem lub nauczycielem i chcesz porozmawiać
           o bezpieczeństwie dziecka?
@@ -89,6 +90,7 @@ export const FrameWrapper = () => {
         alt="Vector"
         src="https://c.animaapp.com/kiXkeqSn/img/vector-12@2x.png"
       />
+      </div>
     </div>
   );
 };
