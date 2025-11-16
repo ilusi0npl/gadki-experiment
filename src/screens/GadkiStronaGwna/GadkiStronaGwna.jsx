@@ -65,7 +65,7 @@ export const GadkiStronaGwna = () => {
         <Header />
 
         {/* TOP SECTION - Absolute positioned elements (everything before FAQ) */}
-        <div className="relative" style={{ height: '7124px' }}>
+        <div className="relative max-w-[1728px] mx-auto" style={{ height: '7124px' }}>
           <img
             className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
             alt="Group"
@@ -205,7 +205,7 @@ export const GadkiStronaGwna = () => {
           <Div onHeightChange={handleFaqHeightChange} />
 
           {/* Spacing + decorative elements container */}
-          <div className="relative w-full" style={{ marginTop: '186px', height: '1098px' }}>
+          <div className="relative w-full max-w-[1728px] mx-auto" style={{ marginTop: '186px', height: '1098px' }}>
             {/* Piesek - positioned at specific location (x=748px in 1728px container) */}
             <img
               className="absolute w-[231px] h-[251px]"

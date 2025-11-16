@@ -74,17 +74,17 @@ export const GadkiDlaDzieci = () => {
           </p>
 
           <div className="flex flex-col w-[281.38px] items-start gap-6 relative flex-[0_0_auto]">
-            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px]">
-              <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+            <a href="tel:116111" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
+              <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-white">
                 Zadzwoń
               </div>
-            </div>
+            </a>
 
-            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff] hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <a href="https://116111.pl" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff] hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
               <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
                 Odwiedź stronę
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -113,17 +113,17 @@ export const GadkiDlaDzieci = () => {
           </p>
 
           <div className="flex flex-col w-[281.38px] items-start gap-6 relative flex-[0_0_auto]">
-            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px]">
-              <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
+            <a href="tel:800100100" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
+              <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-white">
                 Zadzwoń
               </div>
-            </div>
+            </a>
 
-            <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff] hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+            <a href="https://800100100.pl" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-[#ffffff] hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
               <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap">
                 Odwiedź stronę
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -358,7 +358,7 @@ export const GadkiDlaDzieci = () => {
       </div>
 
       <div className="inline-flex items-center gap-5 absolute top-[7177px] left-[472px]">
-        <div className="relative w-[380px] h-[480px] bg-white rounded-xl">
+        <Link to="/dla-rodzicow-i-opiekunow" className="relative w-[380px] h-[480px] bg-white rounded-xl hover:shadow-lg transition-shadow cursor-pointer">
           <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44px]">
             Dla rodziców
             <br />i opiekunów
@@ -377,9 +377,9 @@ export const GadkiDlaDzieci = () => {
               src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/tata-2x.png"
             />
           </div>
-        </div>
+        </Link>
 
-        <div className="relative w-[380px] h-[480px] bg-white rounded-xl overflow-hidden">
+        <Link to="/dla-edukatorow" className="relative w-[380px] h-[480px] bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
           <img
             className="absolute top-[148px] left-[35px] w-[135px] h-[332px] object-cover"
             alt="Edukatorka obszar"
@@ -396,7 +396,7 @@ export const GadkiDlaDzieci = () => {
             Dla edukatorów
             <br />i nauczycieli
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="inline-flex items-center gap-[220px] absolute top-[2864px] left-[299px]">
