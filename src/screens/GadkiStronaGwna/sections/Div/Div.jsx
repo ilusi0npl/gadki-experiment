@@ -12,7 +12,8 @@ const faqData = [
   {
     id: 2,
     number: "02",
-    question: "Czy rozmowa o wykorzystywaniu nie przestraszy dziecka?"
+    question: "Czy rozmowa o wykorzystywaniu nie przestraszy dziecka?",
+    answer: "Jeżeli dziecko powie coś, co w jakikolwiek sposób Cię zaniepokoi, skonsultuj się z profesjonalistą (psychologiem, pedagogiem, koordynatorem Standardów Ochrony Małoletnich w placówce dziecka). Możesz także skorzystać z prowadzonego przez Fundację Dajemy Dzieciom Siłę Telefonu dla Rodziców i Nauczycieli w sprawie Bezpieczeństwa Dzieci: 800 100 100 (800100100.pl). Jesteśmy po to, aby wspierać rodziców i pomagać im radzić sobie w trudnych sytuacjach.\n\nJeżeli okaże się, że nie ma powodów do obaw, poczujesz ulgę, że to sprawdziłeś(-aś). Pamiętaj, dla dziecka to duże wsparcie, że może z Tobą o wszystkim porozmawiać. Niezależnie od tego zawsze okazuj dziecku szacunek. Bądź z nim szczery(-a) i rozmawiaj otwarcie."
   },
   {
     id: 3,

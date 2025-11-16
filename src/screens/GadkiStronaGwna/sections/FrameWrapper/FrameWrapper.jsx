@@ -32,17 +32,17 @@ export const FrameWrapper = () => {
         </p>
 
         <div className="flex flex-col w-[281.38px] items-start gap-6 relative flex-[0_0_auto]">
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
+          <a href="tel:116111" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
             <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-white">
               Zadzwoń
             </div>
-          </div>
+          </a>
 
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+          <a href="https://116111.pl" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
             <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-fddsraspberry">
               Odwiedź stronę
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -71,17 +71,17 @@ export const FrameWrapper = () => {
         </p>
 
         <div className="flex flex-col w-[281.38px] items-start gap-6 relative flex-[0_0_auto]">
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
+          <a href="tel:800100100" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[48px] hover:bg-fddsraspberry transition-colors cursor-pointer group">
             <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-white">
               Zadzwoń
             </div>
-          </div>
+          </a>
 
-          <div className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
+          <a href="https://800100100.pl" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2.5 px-6 py-5 relative self-stretch w-full flex-[0_0_auto] rounded-[48px] border-2 border-solid border-white hover:bg-white hover:border-fddsraspberry transition-colors cursor-pointer group">
             <div className="relative w-fit mt-[-2.00px] font-lato font-bold text-white text-xl tracking-[-0.22px] leading-[30px] whitespace-nowrap group-hover:text-fddsraspberry">
               Odwiedź stronę
             </div>
-          </div>
+          </a>
         </div>
       </div>
 

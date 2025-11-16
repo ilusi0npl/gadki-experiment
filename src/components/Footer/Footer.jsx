@@ -28,7 +28,10 @@ export const Footer = () => {
         <p className="absolute top-[182px] left-[calc(50.00%_+_327px)] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap">
           <span className="tracking-[-0.03px]">Zaprojektował i wdrożył</span>
 
-          <span className="font-bold tracking-[-0.03px]"> cięty język|</span>
+          <span className="font-bold tracking-[-0.03px]">
+            {" cięty język"}
+            <span className="animate-blink">|</span>
+          </span>
         </p>
 
         <div className="flex flex-col w-[122px] items-start gap-2.5 absolute top-[7px] left-[300px]">
@@ -56,7 +59,7 @@ export const Footer = () => {
         </div>
 
         <div className="inline-flex flex-col items-start gap-2.5 absolute top-1.5 left-[901px]">
-          <Link to="/logowanie" className="relative w-fit mt-[-1.00px] font-lato font-normal text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap hover:opacity-80">
+          <Link to="/logowanie" className="relative w-fit mt-[-1.00px] font-lato font-bold text-fddsraspberry text-base tracking-[-0.18px] leading-6 whitespace-nowrap hover:opacity-80">
             Logowanie/Rejestracja
           </Link>
 
