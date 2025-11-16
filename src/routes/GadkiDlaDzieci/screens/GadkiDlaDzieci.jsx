@@ -2,8 +2,42 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "../../../components/Header";
 import { Footer } from "../../../components/Footer";
+import { FAQ } from "../../../components/FAQ/FAQ";
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
 
 export const GadkiDlaDzieci = () => {
+  const dlaDzieciTitle = useScrollReveal();
+  const ageTabs = useScrollReveal();
+  const videoFrame = useScrollReveal();
+  const materialyIntro = useScrollReveal();
+  const materialyTitle = useScrollReveal();
+
+  // Material items
+  const material01 = useScrollReveal();
+  const material01Content = useScrollReveal();
+  const material01Download = useScrollReveal();
+
+  const material02 = useScrollReveal();
+  const material02Content = useScrollReveal();
+  const material02Download = useScrollReveal();
+
+  const material03 = useScrollReveal();
+  const material03Content = useScrollReveal();
+  const material03Download = useScrollReveal();
+
+  const material04 = useScrollReveal();
+  const material04Content = useScrollReveal();
+
+  const material05 = useScrollReveal();
+  const material05Content = useScrollReveal();
+  const material05Download = useScrollReveal();
+
+  const faqSection = useScrollReveal();
+  const pozostaleMaterialy = useScrollReveal();
+  const remainingCards = useScrollReveal();
+  const helpSection1 = useScrollReveal();
+  const helpSection2 = useScrollReveal();
+
   useEffect(() => {
     document.title = "Dla dzieci - GADKI";
   }, []);
@@ -37,7 +71,6 @@ export const GadkiDlaDzieci = () => {
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
       <Header />
-      <Footer />
 
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
@@ -47,17 +80,17 @@ export const GadkiDlaDzieci = () => {
 
       <div className="absolute top-[7734px] left-0 w-[1728px] h-[875px]">
 
-        <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px]">
+        <div ref={helpSection1.ref} className={`flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px] ${helpSection1.className}`}>
           <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
-            Jeżeli jesteś dzieckiem i trudno Ci porozmawiać z osobą dorosłą
-            z Twojego otoczenia...
+            Jeżeli jesteś dzieckiem i trudno Ci porozmawiać z osobą dorosłą
+            z Twojego otoczenia...
           </p>
 
           <p className="relative self-stretch font-lato font-normal text-white text-xl tracking-[-0.22px] leading-[30px]">
             <span className="text-[#ffffff] tracking-[-0.04px]">
-              Telefon Zaufania dla Dzieci i Młodzieży –116 111 może Ci pomóc.
-              Prowadzimy bezpłatną i anonimową pomoc. Zadzwoń do nas
-              pod numer 116 111 lub odwiedź naszą stronę internetową{" "}
+              Telefon Zaufania dla Dzieci i Młodzieży –116 111 może Ci pomóc.
+              Prowadzimy bezpłatną i anonimową pomoc. Zadzwoń do nas
+              pod numer 116 111 lub odwiedź naszą stronę internetową{" "}
             </span>
 
             <a
@@ -88,17 +121,17 @@ export const GadkiDlaDzieci = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[974px]">
+        <div ref={helpSection2.ref} className={`flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[974px] ${helpSection2.className}`}>
           <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
-            Jesteś rodzicem lub nauczycielem i chcesz porozmawiać
-            o bezpieczeństwie dziecka?
+            Jesteś rodzicem lub nauczycielem i chcesz porozmawiać
+            o bezpieczeństwie dziecka?
           </p>
 
           <p className="relative self-stretch font-lato font-normal text-white text-xl tracking-[-0.22px] leading-[30px]">
             <span className="tracking-[-0.04px]">
-              Możesz skontaktować się z nami telefonicznie pod numerem Telefonu
-              dla Rodziców i Nauczycieli w sprawie Bezpieczeństwa Dzieci:
-              800 100 100 lub poprzez stronę{" "}
+              Możesz skontaktować się z nami telefonicznie pod numerem Telefonu
+              dla Rodziców i Nauczycieli w sprawie Bezpieczeństwa Dzieci:
+              800 100 100 lub poprzez stronę{" "}
             </span>
 
             <a
@@ -146,17 +179,23 @@ export const GadkiDlaDzieci = () => {
         src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/vector.svg"
       />
 
-      <img
-        className="absolute top-[77px] left-[calc(50.00%_-_73px)] w-[146px] h-[67px]"
-        alt="Frame"
-        src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/frame-12.svg"
-      />
+      <Link
+        to="/"
+        className="absolute top-[77px] left-[calc(50.00%_-_73px)] w-[146px] h-[67px] z-[60] cursor-pointer hover:opacity-80 transition-opacity"
+        aria-label="Strona główna - GADKI"
+      >
+        <img
+          className="w-full h-full"
+          alt="GADKI"
+          src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/frame-12.svg"
+        />
+      </Link>
 
-      <div className="absolute top-[329px] left-[474px] w-[781px] font-happy-season font-bold text-white text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
+      <div ref={dlaDzieciTitle.ref} className={`absolute top-[329px] left-[474px] w-[781px] font-happy-season font-bold text-white text-8xl text-center tracking-[-1.06px] leading-[105.6px] ${dlaDzieciTitle.className}`}>
         Dla dzieci
       </div>
 
-      <div className="inline-flex items-center gap-[120px] absolute top-[486px] left-[calc(50.00%_-_390px)]">
+      <div ref={ageTabs.ref} className={`inline-flex items-center gap-[120px] absolute top-[486px] left-[calc(50.00%_-_390px)] ${ageTabs.className}`}>
         <div className="relative w-[180px] mt-[-1.00px] font-happy-season font-bold text-white text-[64px] text-center tracking-[-0.70px] leading-[70.4px]">
           4–6 lat
         </div>
@@ -170,17 +209,18 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="absolute top-[1601px] left-[474px] w-[781px] font-happy-season font-bold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
+      <div ref={materialyTitle.ref} className={`absolute top-[1601px] left-[474px] w-[781px] font-happy-season font-bold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px] ${materialyTitle.className}`}>
         Materiały
       </div>
 
       <img
-        className="absolute top-[644px] left-[274px] w-[1180px] h-[622px]"
+        ref={videoFrame.ref}
+        className={`absolute top-[644px] left-[274px] w-[1180px] h-[622px] ${videoFrame.className}`}
         alt="Frame"
         src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/frame-44.svg"
       />
 
-      <div className="flex w-[1180px] items-center gap-[251px] absolute top-[1783px] left-[274px]">
+      <div ref={material01.ref} className={`flex w-[1180px] items-center gap-[251px] absolute top-[1783px] left-[274px] ${material01.className}`}>
         <div className="flex w-[878px] items-center gap-5 relative">
           <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
             01
@@ -192,63 +232,63 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="inline-flex items-start justify-center gap-[265px] absolute top-[1885px] left-[374px]">
+      <div ref={material01Content.ref} className={`inline-flex items-start justify-center gap-[265px] absolute top-[1885px] left-[374px] ${material01Content.className}`}>
         <div className="relative w-[237.88px] h-[305.39px] bg-fddsraspberry rounded-xl" />
 
         <div className="inline-flex flex-col items-start gap-[120px] relative flex-[0_0_auto]">
           <p className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
-            Broszura &#34;GADKI&#34; to rozmowy na temat kilku prostych zasad,
+            Broszura &#34;GADKI&#34; to rozmowy na temat kilku prostych zasad,
             które pomogą ochronić Twoje dziecko przed wykorzystywaniem
             seksualnym.
           </p>
         </div>
       </div>
 
-      <div className="inline-flex items-start justify-center gap-[265px] absolute top-[2511px] left-[374px]">
+      <div ref={material02Content.ref} className={`inline-flex items-start justify-center gap-[265px] absolute top-[2511px] left-[374px] ${material02Content.className}`}>
         <div className="relative w-[237.88px] h-[305.39px] bg-fddsraspberry rounded-xl" />
 
         <div className="inline-flex flex-col items-start gap-[120px] relative flex-[0_0_auto]">
           <p className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
-            W rozmowie z dzieckiem może Ci pomóc przygotowana przez nas ulotka
-            adresowana do dzieci.
+            W rozmowie z dzieckiem może Ci pomóc przygotowana przez nas ulotka
+            adresowana do dzieci.
           </p>
         </div>
       </div>
 
-      <div className="inline-flex items-start justify-center gap-[265px] absolute top-[3138px] left-[374px]">
+      <div ref={material03Content.ref} className={`inline-flex items-start justify-center gap-[265px] absolute top-[3138px] left-[374px] ${material03Content.className}`}>
         <div className="relative w-[237.88px] h-[305.39px] bg-fddsraspberry rounded-xl" />
 
         <div className="inline-flex flex-col items-start gap-12 relative flex-[0_0_auto]">
           <p className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
-            Czy wiesz, że zajęcia&#34;Gadki z psem&#34; możesz przeprowadzić
-            z dzieckiem w swoim domu? Przygotowaliśmy dla Ciebie plan działania,
+            Czy wiesz, że zajęcia&#34;Gadki z psem&#34; możesz przeprowadzić
+            z dzieckiem w swoim domu? Przygotowaliśmy dla Ciebie plan działania,
             dzięki któremu poprzez zabawę nauczysz dziecko podstawowych zasad
-            bezpieczeństwa i rozpoznawania zagrażających sytuacji.
+            bezpieczeństwa i rozpoznawania zagrażających sytuacji.
           </p>
         </div>
       </div>
 
-      <div className="inline-flex items-start justify-center gap-[265px] absolute top-[4708px] left-[374px]">
+      <div ref={material05Content.ref} className={`inline-flex items-start justify-center gap-[265px] absolute top-[4708px] left-[374px] ${material05Content.className}`}>
         <div className="relative w-[237.88px] h-[305.39px] bg-fddsraspberry rounded-xl" />
 
         <div className="inline-flex flex-col items-start gap-12 relative flex-[0_0_auto]">
           <p className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
-            Czy wiesz, że zajęcia&#34;Gadki z psem&#34; możesz przeprowadzić
-            z dzieckiem w swoim domu? Przygotowaliśmy dla Ciebie plan działania,
+            Czy wiesz, że zajęcia&#34;Gadki z psem&#34; możesz przeprowadzić
+            z dzieckiem w swoim domu? Przygotowaliśmy dla Ciebie plan działania,
             dzięki któremu poprzez zabawę nauczysz dziecko podstawowych zasad
-            bezpieczeństwa i rozpoznawania zagrażających sytuacji.
+            bezpieczeństwa i rozpoznawania zagrażających sytuacji.
           </p>
         </div>
       </div>
 
-      <div className="inline-flex items-start justify-center gap-[265px] absolute top-[3782px] left-[374px]">
+      <div ref={material04Content.ref} className={`inline-flex items-start justify-center gap-[265px] absolute top-[3782px] left-[374px] ${material04Content.className}`}>
         <div className="relative w-[237.88px] h-[305.39px] bg-fddsraspberry rounded-xl" />
 
         <div className="inline-flex flex-col items-start gap-12 relative flex-[0_0_auto]">
           <p className="relative w-[480px] mt-[-1.00px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
-            Karty pracy i zabawy dla dzieci w wieku przedszkolnym utrwalające
+            Karty pracy i zabawy dla dzieci w wieku przedszkolnym utrwalające
             zasady GADKI. Złóżcie razem wizerunek gadkowego psa, pokolorujcie
-            obrazek, powtarzajacie nazwy części ciała i ułóżcie nasze puzzle!
+            obrazek, powtarzajacie nazwy części ciała i ułóżcie nasze puzzle!
           </p>
         </div>
       </div>
@@ -259,7 +299,7 @@ export const GadkiDlaDzieci = () => {
         src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/line-2.svg"
       />
 
-      <div className="flex w-[1180px] items-center gap-[251px] absolute top-[2409px] left-[274px]">
+      <div ref={material02.ref} className={`flex w-[1180px] items-center gap-[251px] absolute top-[2409px] left-[274px] ${material02.className}`}>
         <div className="flex w-[878px] items-center gap-5 relative">
           <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
             02
@@ -271,19 +311,19 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="flex w-[1180px] items-center gap-[251px] absolute top-[3036px] left-[274px]">
+      <div ref={material03.ref} className={`flex w-[1180px] items-center gap-[251px] absolute top-[3036px] left-[274px] ${material03.className}`}>
         <div className="flex w-[878px] items-center gap-5 relative">
           <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
             03
           </div>
 
           <div className="relative w-[473.01px] mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
-            Plan zajęć domowych dla dzieci
+            Plan zajęć domowych dla dzieci
           </div>
         </div>
       </div>
 
-      <div className="flex w-[1180px] items-center gap-[251px] absolute top-[4606px] left-[274px]">
+      <div ref={material05.ref} className={`flex w-[1180px] items-center gap-[251px] absolute top-[4606px] left-[274px] ${material05.className}`}>
         <div className="flex w-[878px] items-center gap-5 relative">
           <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
             05
@@ -295,14 +335,14 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="flex w-[1180px] items-center gap-[251px] absolute top-[3680px] left-[274px]">
+      <div ref={material04.ref} className={`flex w-[1180px] items-center gap-[251px] absolute top-[3680px] left-[274px] ${material04.className}`}>
         <div className="flex w-[878px] items-center gap-5 relative">
           <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
             04
           </div>
 
           <div className="relative w-[473.01px] mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
-            Ćwiczenia i zabawy dla dzieci
+            Ćwiczenia i zabawy dla dzieci
           </div>
         </div>
       </div>
@@ -331,7 +371,7 @@ export const GadkiDlaDzieci = () => {
         src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/line-2.svg"
       />
 
-      <div className="inline-flex items-center gap-[220px] absolute top-[2238px] left-[299px]">
+      <div ref={material01Download.ref} className={`inline-flex items-center gap-[220px] absolute top-[2238px] left-[299px] ${material01Download.className}`}>
         <div className="inline-flex items-center gap-[39px] relative flex-[0_0_auto]">
           <img
             className="relative w-9 h-9"
@@ -351,13 +391,13 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="absolute top-[6907px] left-[276px] w-[1172px] font-happy-season font-semibold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
+      <div ref={pozostaleMaterialy.ref} className={`absolute top-[6907px] left-[276px] w-[1172px] font-happy-season font-semibold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px] ${pozostaleMaterialy.className}`}>
         Pozostałe
         <br />
         materiały
       </div>
 
-      <div className="inline-flex items-center gap-5 absolute top-[7177px] left-[472px]">
+      <div ref={remainingCards.ref} className={`inline-flex items-center gap-5 absolute top-[7177px] left-[472px] ${remainingCards.className}`}>
         <Link to="/dla-rodzicow-i-opiekunow" className="relative w-[380px] h-[480px] bg-white rounded-xl hover:shadow-lg transition-shadow cursor-pointer">
           <div className="absolute top-10 left-[76px] w-[228px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44px]">
             Dla rodziców
@@ -379,27 +419,27 @@ export const GadkiDlaDzieci = () => {
           </div>
         </Link>
 
-        <Link to="/dla-edukatorow" className="relative w-[380px] h-[480px] bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
+        <Link to="/dla-edukatorow" className="relative w-[380px] h-[480px] bg-white rounded-xl hover:shadow-lg transition-shadow cursor-pointer overflow-hidden">
+          <div className="absolute top-[41px] left-[93px] w-[194px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44px]">
+            Dla edukatorów
+            <br />i nauczycieli
+          </div>
+
           <img
-            className="absolute top-[148px] left-[35px] w-[135px] h-[332px] object-cover"
+            className="absolute top-[120px] left-[35px] w-[135px] h-[360px] object-cover object-top"
             alt="Edukatorka obszar"
             src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/edukatorka-obszar-roboczy-1-1.png"
           />
 
           <img
-            className="absolute top-[133px] left-[155px] w-48 h-[347px] object-cover"
+            className="absolute top-[120px] left-[155px] w-48 h-[360px] object-cover object-top"
             alt="Edukator obszar"
             src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/edukator-obszar-roboczy-1-1.png"
           />
-
-          <div className="absolute top-[41px] left-[93px] w-[194px] font-happy-season font-semibold text-fddsraspberry text-[40px] text-center tracking-[-0.44px] leading-[44px]">
-            Dla edukatorów
-            <br />i nauczycieli
-          </div>
         </Link>
       </div>
 
-      <div className="inline-flex items-center gap-[220px] absolute top-[2864px] left-[299px]">
+      <div ref={material02Download.ref} className={`inline-flex items-center gap-[220px] absolute top-[2864px] left-[299px] ${material02Download.className}`}>
         <div className="inline-flex items-center gap-[39px] relative flex-[0_0_auto]">
           <img
             className="relative w-9 h-9"
@@ -419,7 +459,7 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="inline-flex items-center gap-[220px] absolute top-[3491px] left-[299px]">
+      <div ref={material03Download.ref} className={`inline-flex items-center gap-[220px] absolute top-[3491px] left-[299px] ${material03Download.className}`}>
         <div className="inline-flex items-center gap-[39px] relative flex-[0_0_auto]">
           <img
             className="relative w-9 h-9"
@@ -439,7 +479,7 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="inline-flex items-center gap-[220px] absolute top-[5061px] left-[299px]">
+      <div ref={material05Download.ref} className={`inline-flex items-center gap-[220px] absolute top-[5061px] left-[299px] ${material05Download.className}`}>
         <div className="inline-flex items-center gap-[39px] relative flex-[0_0_auto]">
           <img
             className="relative w-9 h-9"
@@ -541,114 +581,15 @@ export const GadkiDlaDzieci = () => {
         </div>
       </div>
 
-      <div className="flex flex-col w-[1080px] items-center gap-12 absolute top-[5476px] left-[324px]">
-        <div className="relative w-[180px] h-[180px] bg-beige-400 rounded-[20000px] overflow-hidden">
-          <img
-            className="absolute top-6 left-[38px] w-[142px] h-[156px] object-cover"
-            alt="Gadek"
-            src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/gadek-1-1.png"
-          />
-        </div>
-
-        <div className="relative self-stretch font-happy-season font-semibold text-fddsraspberry text-8xl text-center tracking-[-1.06px] leading-[105.6px]">
-          Zapytaj Gadka
-        </div>
-
-        <div className="flex flex-col items-start gap-9 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col items-center justify-center gap-9 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="gap-[458px] flex items-center relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-5 relative flex-[0_0_auto]">
-                <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
-                  01
-                </div>
-
-                <div className="relative w-[473.01px] mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px]">
-                  Jak rozmawiać z dzieckiem?
-                </div>
-              </div>
-
-              <img
-                className="relative w-6 h-[6.35px]"
-                alt="Layer"
-                src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/layer-1.svg"
-              />
-            </div>
-
-            <p className="relative w-[891.26px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
-              Nie traktuj rozmowy dotyczącej zasad zachowania bezpieczeństwa
-              jako jednorazowego wydarzenia. Znacznie lepiej jest rozmawiać
-              na te tematy krócej, a częściej. Pomoże to dziecku zapamiętać
-              kluczowe informacje i stosować się do przedstawionych zasad.
-            </p>
-
-            <img
-              className="relative w-[1076.71px] h-px mb-[-1.00px] object-cover"
-              alt="Line"
-              src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/line-1.svg"
-            />
-          </div>
-
-          <div className="flex flex-col items-start gap-[22px] relative self-stretch w-full flex-[0_0_auto]">
-            <div className="justify-center gap-[296px] flex items-center relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-5 relative flex-[0_0_auto]">
-                <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
-                  02
-                </div>
-
-                <p className="relative w-fit mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px] whitespace-nowrap">
-                  Czy rozmowa o wykorzystywaniu nie przestraszy dziecka?
-                </p>
-              </div>
-
-              <img
-                className="relative w-[81px]"
-                alt="Frame"
-                src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/frame-28.svg"
-              />
-            </div>
-
-            <img
-              className="relative w-[1076.71px] mb-[-0.50px] h-px object-cover"
-              alt="Line"
-              src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/line-1.svg"
-            />
-          </div>
-
-          <div className="flex flex-col items-start gap-[22px] relative self-stretch w-full flex-[0_0_auto]">
-            <div className="justify-center gap-[276px] flex items-center relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-5 relative flex-[0_0_auto]">
-                <div className="relative w-20 mt-[-1.00px] font-happy-season font-bold text-fddsraspberry text-4xl text-center tracking-[-0.40px] leading-[54px]">
-                  03
-                </div>
-
-                <p className="relative w-fit mt-[-1.00px] font-happy-season font-medium text-black text-4xl tracking-[-0.40px] leading-[54px] whitespace-nowrap">
-                  Co zrobić, jeśli moje dziecko powie coś, co mnie zaniepokoi?
-                </p>
-              </div>
-
-              <img
-                className="relative w-[81px]"
-                alt="Frame"
-                src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/frame-28.svg"
-              />
-            </div>
-
-            <img
-              className="relative w-[1076.71px] mb-[-0.50px] h-px object-cover"
-              alt="Line"
-              src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/line-1.svg"
-            />
-          </div>
-        </div>
-
-        <Link to="/faq" className="flex-[0_0_auto] flex w-[280px] items-center justify-center gap-2.5 px-6 py-5 relative bg-fddsraspberry rounded-[48px] hover:bg-white border-2 border-transparent hover:border-fddsraspberry transition-colors cursor-pointer group">
-          <div className="relative w-fit mt-[-1.00px] font-lato font-bold text-white group-hover:text-fddsraspberry text-2xl tracking-[-0.26px] leading-9 whitespace-nowrap">
-            Przejdź do FAQ
-          </div>
-        </Link>
+      <div ref={faqSection.ref} className={`absolute top-[5476px] left-[324px] ${faqSection.className}`}>
+        <FAQ
+          title="Zapytaj Gadka"
+          showDogImage={true}
+          defaultOpenId={1}
+        />
       </div>
 
-      <div className="absolute top-[190px] left-[274px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden">
+      <div className="absolute top-[190px] left-[274px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden animate-gentle-pulse">
         <img
           className="mt-7 w-[165px] h-[152px] ml-2 object-cover"
           alt="Dziewczyna"
@@ -656,7 +597,7 @@ export const GadkiDlaDzieci = () => {
         />
       </div>
 
-      <div className="absolute top-[-52px] left-[474px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden">
+      <div className="absolute top-[-52px] left-[474px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden animate-gentle-pulse">
         <img
           className="mt-[52px] w-[142px] h-32 ml-[38px] object-cover"
           alt="Gadek"
@@ -664,7 +605,7 @@ export const GadkiDlaDzieci = () => {
         />
       </div>
 
-      <div className="absolute top-16 left-[1174px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden">
+      <div className="absolute top-16 left-[1174px] w-[180px] h-[180px] flex bg-beige-400 rounded-[20000px] overflow-hidden animate-gentle-pulse">
         <img
           className="mt-[30px] w-[180px] h-[150px] object-cover"
           alt="Chopak"
@@ -672,12 +613,16 @@ export const GadkiDlaDzieci = () => {
         />
       </div>
 
-      <p className="absolute top-[1346px] left-[274px] w-[1180px] font-lato font-medium text-black text-[32px] tracking-[-0.35px] leading-[44.8px]">
+      <p ref={materialyIntro.ref} className={`absolute top-[1346px] left-[274px] w-[1180px] font-lato font-medium text-black text-[32px] tracking-[-0.35px] leading-[44.8px] ${materialyIntro.className}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
         sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
         Curabitur tempus urna at turpis.
       </p>
+
+      <div className="absolute top-[8485px] left-0 w-full">
+        <Footer />
+      </div>
       </div>
     </div>
   );
