@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MenuProvider } from "./context/MenuContext";
+import { AuthProvider } from "./context/AuthContext";
 import { MenuOverlay } from "./components/MenuOverlay";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { GadkiStronaGwna } from "./screens/GadkiStronaGwna";
 import { GadkiOKampanii } from "./routes/sections/screens/GadkiOKampanii";
@@ -19,22 +21,26 @@ export const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <MenuProvider>
-        <MenuOverlay />
-        <Routes>
-          <Route path="/" element={<GadkiStronaGwna />} />
-          <Route path="/o-kampanii" element={<GadkiOKampanii />} />
-          <Route path="/dla-dzieci" element={<GadkiDlaDzieci46 />} />
-          <Route path="/dla-dzieci/4-6" element={<GadkiDlaDzieci46 />} />
-          <Route path="/dla-dzieci/7-9" element={<GadkiDlaDzieci79 />} />
-          <Route path="/dla-dzieci/10-12" element={<GadkiDlaDzieci1012 />} />
-          <Route path="/dla-rodzicow-i-opiekunow" element={<GadkiDlaRodzicwI />} />
-          <Route path="/dla-edukatorow" element={<GadkiDlaEdukatorw />} />
-          <Route path="/faq" element={<GadkiFaq />} />
-          <Route path="/logowanie" element={<GadkiLogowanie />} />
-          <Route path="/konto" element={<GadkiKonto />} />
-        </Routes>
-      </MenuProvider>
+      <AuthProvider>
+        <ProtectedRoute>
+          <MenuProvider>
+            <MenuOverlay />
+            <Routes>
+              <Route path="/" element={<GadkiStronaGwna />} />
+              <Route path="/o-kampanii" element={<GadkiOKampanii />} />
+              <Route path="/dla-dzieci" element={<GadkiDlaDzieci46 />} />
+              <Route path="/dla-dzieci/4-6" element={<GadkiDlaDzieci46 />} />
+              <Route path="/dla-dzieci/7-9" element={<GadkiDlaDzieci79 />} />
+              <Route path="/dla-dzieci/10-12" element={<GadkiDlaDzieci1012 />} />
+              <Route path="/dla-rodzicow-i-opiekunow" element={<GadkiDlaRodzicwI />} />
+              <Route path="/dla-edukatorow" element={<GadkiDlaEdukatorw />} />
+              <Route path="/faq" element={<GadkiFaq />} />
+              <Route path="/logowanie" element={<GadkiLogowanie />} />
+              <Route path="/konto" element={<GadkiKonto />} />
+            </Routes>
+          </MenuProvider>
+        </ProtectedRoute>
+      </AuthProvider>
     </Router>
   );
 };
