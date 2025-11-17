@@ -112,16 +112,21 @@ export const GadkiDlaRodzicwI = () => {
           src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-3.svg"
         />
 
-
-        {/* Bottom Help Section Union SVG - Full width, positioned to start at middle of dog and extend to page bottom */}
+        {/* Footer backgrounds - Two wave layers that end before footer */}
+        {/* First wave (union-2) - starts at middle of dog */}
         <img
-          className="absolute left-0 w-screen object-cover"
-          style={{
-            top: `${helpSectionPosition + 125}px`,
-            height: `${pageHeight - (helpSectionPosition + 125)}px`
-          }}
+          className="absolute left-0 w-screen h-[660px] object-cover"
+          style={{ top: `${helpSectionPosition + 125}px` }}
           alt="Union"
-          src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-3.svg"
+          src="https://c.animaapp.com/kiXkeqSn/img/union-2.svg"
+        />
+
+        {/* Second wave (union-3) - 150px lower to create layered wavy bottom effect */}
+        <img
+          className="absolute left-0 w-screen h-[750px] object-cover"
+          style={{ top: `${helpSectionPosition + 125 + 150}px` }}
+          alt="Union"
+          src="https://c.animaapp.com/kiXkeqSn/img/union-3.svg"
         />
       </div>
 
