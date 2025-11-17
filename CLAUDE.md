@@ -19,6 +19,13 @@ npm run dev
 npm run build
 ```
 
+### Playwright Testing and Analysis
+
+When using Playwright for analysis or testing:
+- **Always set timeout to 5 minutes (300000ms)** for operations that may take longer (page analysis, screenshots of large pages, etc.)
+- Example: `await page.goto(url, { timeout: 300000 })`
+- This prevents timeout errors when analyzing complex pages or waiting for content to load
+
 ## Architecture
 
 ### Routing Structure
