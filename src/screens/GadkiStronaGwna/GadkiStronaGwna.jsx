@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
 import { Div } from "./sections/Div";
 import { DivWrapper } from "./sections/DivWrapper";
 import { Frame } from "./sections/Frame";
-import { FrameWrapper } from "./sections/FrameWrapper";
 import { Group } from "./sections/Group";
 import { SectionComponentNode } from "./sections/SectionComponentNode";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
+import { FooterSectionWithBackground } from "../../routes/sections/screens/sections/FooterSectionWithBackground";
 
 export const GadkiStronaGwna = () => {
   const zasadyGadki = useScrollReveal();
@@ -24,9 +23,14 @@ export const GadkiStronaGwna = () => {
     setFaqExtraHeight(extraHeight);
   };
 
+  // Calculate total page height: footer section position + footer container height (1098) + footer height (982)
+  const footerSectionTop = 8285 + faqExtraHeight + 186;
+  const pageHeight = footerSectionTop + 1098 + 982;
+
   return (
     <div
-      className="bg-beige-200 w-full relative min-h-screen overflow-x-hidden"
+      className="bg-beige-200 w-full relative overflow-x-hidden"
+      style={{ minHeight: `${pageHeight}px` }}
       data-model-id="21:2"
     >
       {/* DECORATION LAYER - Full-width backgrounds & decorations */}
@@ -43,21 +47,13 @@ export const GadkiStronaGwna = () => {
           alt="Union"
           src="https://c.animaapp.com/kiXkeqSn/img/union.svg"
         />
+      </div>
 
-        {/* Footer backgrounds - DYNAMIC (move with FAQ expansion) */}
-        <img
-          className="absolute left-0 w-screen h-[723px] object-cover"
-          style={{ top: `${8285 + faqExtraHeight}px` }}
-          alt="Union"
-          src="https://c.animaapp.com/kiXkeqSn/img/union-2.svg"
-        />
-
-        <img
-          className="absolute left-0 w-screen h-[723px] object-cover"
-          style={{ top: `${8435 + faqExtraHeight}px` }}
-          alt="Union"
-          src="https://c.animaapp.com/kiXkeqSn/img/union-3.svg"
-        />
+      {/* Footer Section with Background - positioned with absolute after FAQ */}
+      <div className="absolute left-0 w-screen pointer-events-none" style={{ top: `${8285 + faqExtraHeight + 186}px`, zIndex: 0 }}>
+        <div className="pointer-events-auto">
+          <FooterSectionWithBackground topPosition={0} />
+        </div>
       </div>
 
       {/* CONTENT LAYER - Full width container */}
@@ -200,38 +196,9 @@ export const GadkiStronaGwna = () => {
           />
         </div>
 
-        {/* NATURAL FLOW SECTION - FAQ and everything below flows naturally */}
+        {/* NATURAL FLOW SECTION - FAQ flows naturally */}
         <div className="relative flex flex-col" style={{ marginTop: '0px' }}>
           <Div onHeightChange={handleFaqHeightChange} />
-
-          {/* Spacing + decorative elements container */}
-          <div className="relative w-full max-w-[1728px] mx-auto" style={{ marginTop: '186px', height: '1098px' }}>
-            {/* Piesek - positioned at specific location (x=748px in 1728px container) */}
-            <img
-              className="absolute w-[231px] h-[251px]"
-              style={{ top: '0px', left: '748px' }}
-              alt="Piesek"
-              src="https://c.animaapp.com/kiXkeqSn/img/piesek2-01-1@2x.png"
-            />
-
-            {/* Footer Section */}
-            <div className="absolute w-full" style={{ top: '185px' }}>
-              <FrameWrapper />
-            </div>
-
-            {/* Decorative image next to footer */}
-            <img
-              className="absolute left-[1480px] w-[248px] h-[419px] animate-gentle-pulse"
-              style={{ top: '274px' }}
-              alt="Group"
-              src="https://c.animaapp.com/kiXkeqSn/img/group-11@2x.png"
-            />
-          </div>
-
-          {/* Footer at the bottom - overlaps FrameWrapper by 116px */}
-          <div style={{ marginTop: '-116px' }}>
-            <Footer />
-          </div>
         </div>
       </div>
     </div>
