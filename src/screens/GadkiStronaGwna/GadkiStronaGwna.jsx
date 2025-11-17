@@ -23,41 +23,35 @@ export const GadkiStronaGwna = () => {
     setFaqExtraHeight(extraHeight);
   };
 
-  // Calculate total page height: footer section position + footer container height (1098) + footer height (982)
+  // Calculate total page height: footer section position + footer position (982) + footer height (485)
   const footerSectionTop = 8285 + faqExtraHeight + 186;
-  const pageHeight = footerSectionTop + 1098 + 982;
+  const pageHeight = footerSectionTop + 982 + 485;
 
   return (
     <div
-      className="bg-beige-200 w-full relative overflow-x-hidden"
+      className="bg-beige-200 w-full relative"
       style={{ minHeight: `${pageHeight}px` }}
       data-model-id="21:2"
     >
+      <div className="w-full relative" style={{ minHeight: `${pageHeight}px` }}>
       {/* DECORATION LAYER - Full-width backgrounds & decorations */}
-      <div className="absolute inset-0 w-screen pointer-events-none z-0">
+      <div className="absolute inset-0 w-full pointer-events-none z-0">
         {/* Top backgrounds - FIXED (don't move with FAQ) */}
         <img
-          className="absolute w-screen h-[12.30%] top-0 left-0 object-cover"
+          className="absolute w-full h-[12.30%] top-0 left-0 object-cover"
           alt="Union"
           src="https://c.animaapp.com/kiXkeqSn/img/union-1.svg"
         />
 
         <img
-          className="absolute top-[2950px] left-0 w-screen h-[1352px] object-cover"
+          className="absolute top-[2950px] left-0 w-full h-[1352px] object-cover"
           alt="Union"
           src="https://c.animaapp.com/kiXkeqSn/img/union.svg"
         />
       </div>
 
-      {/* Footer Section with Background - positioned with absolute after FAQ */}
-      <div className="absolute left-0 w-screen pointer-events-none" style={{ top: `${8285 + faqExtraHeight + 186}px`, zIndex: 0 }}>
-        <div className="pointer-events-auto">
-          <FooterSectionWithBackground topPosition={0} />
-        </div>
-      </div>
-
-      {/* CONTENT LAYER - Full width container */}
-      <div className="w-full relative z-10">
+      {/* CONTENT LAYER - Centered container */}
+      <div className="max-w-[1728px] mx-auto relative z-10">
         <Header />
 
         {/* TOP SECTION - Absolute positioned elements (everything before FAQ) */}
@@ -69,7 +63,7 @@ export const GadkiStronaGwna = () => {
           />
 
           <img
-            className="absolute w-full h-0 top-[11.53%] left-[46.39%]"
+            className="absolute w-full h-0 top-[11.53%] left-0"
             alt="Vector"
             src="/img/vector.png"
           />
@@ -200,6 +194,14 @@ export const GadkiStronaGwna = () => {
         <div className="relative flex flex-col" style={{ marginTop: '0px' }}>
           <Div onHeightChange={handleFaqHeightChange} />
         </div>
+      </div>
+
+      {/* Footer Section with Background - positioned with absolute after FAQ */}
+      <div className="absolute left-0 w-full pointer-events-none" style={{ top: `${8285 + faqExtraHeight + 186}px`, zIndex: 0 }}>
+        <div className="pointer-events-auto">
+          <FooterSectionWithBackground topPosition={0} />
+        </div>
+      </div>
       </div>
     </div>
   );

@@ -13,19 +13,19 @@ export const GadkiOKampanii = () => {
   }, []);
 
   return (
-    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[7032px] relative">
+    <div className="bg-beige-200 overflow-hidden w-full h-[7032px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
-      <div className="absolute inset-0 w-screen pointer-events-none">
+      <div className="absolute inset-0 w-full pointer-events-none">
         {/* Top Union SVG - Full width */}
         <img
-          className="absolute w-screen h-[259px] top-0 left-0 object-cover"
+          className="absolute w-full h-[259px] top-0 left-0 object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyusz4fmWst0p/img/union-3.svg"
         />
 
         {/* Newsletter Union SVG - Full width */}
         <img
-          className="absolute top-[5526px] left-0 w-screen h-[723px] object-cover"
+          className="absolute top-[5526px] left-0 w-full h-[723px] object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyusz4fmWst0p/img/union-2.svg"
         />
@@ -34,7 +34,6 @@ export const GadkiOKampanii = () => {
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
       <Header />
-      <Footer />
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
         alt="Group"
@@ -93,6 +92,8 @@ export const GadkiOKampanii = () => {
 
       <Div />
       <Newsletter />
+
+      <Footer />
       </div>
     </div>
   );

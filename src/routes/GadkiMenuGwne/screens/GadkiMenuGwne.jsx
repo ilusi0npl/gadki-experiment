@@ -31,14 +31,14 @@ export const GadkiMenuGwne = () => {
   }, []);
 
   return (
-    <div className="bg-fddsraspberry overflow-hidden w-full min-w-[1728px] h-screen fixed inset-0 z-50">
+    <div className="bg-fddsraspberry overflow-hidden w-full h-screen fixed inset-0 z-50">
       <Header />
 
       {/* BACKGROUND LAYER - Full-width backgrounds */}
-      <div className="absolute inset-0 w-screen pointer-events-none">
+      <div className="absolute inset-0 w-full pointer-events-none">
         {/* Bottom Union SVG - Full width */}
         <img
-          className="absolute top-[1004px] left-0 w-screen h-[113px] object-cover"
+          className="absolute top-[1004px] left-0 w-full h-[113px] object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyud8wmJZMflz/img/union.svg"
         />

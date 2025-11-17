@@ -2,19 +2,22 @@ import React from "react";
 
 export const FrameWrapper = () => {
   return (
-    <div className="absolute top-[1778px] left-0 w-[1728px] h-[913px]">
+    <div className="absolute top-[1778px] left-0 w-full h-[913px]">
+      {/* Background images - full width */}
       <img
-        className="top-px h-[723px] absolute left-0 w-[1728px]"
+        className="top-px h-[723px] absolute left-0 w-full"
         alt="Union"
         src="https://c.animaapp.com/mhyvw56jKmrjx6/img/union-1.svg"
       />
 
       <img
-        className="top-[151px] h-[723px] absolute left-0 w-[1728px]"
+        className="top-[151px] h-[723px] absolute left-0 w-full"
         alt="Union"
         src="https://c.animaapp.com/mhyvw56jKmrjx6/img/union-2.svg"
       />
 
+      {/* Content wrapper - centered container for cards */}
+      <div className="relative max-w-[1728px] mx-auto h-full">
       <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px]">
         <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
           Jeżeli jesteś dzieckiem i trudno Ci porozmawiać z osobą dorosłą
@@ -106,6 +109,7 @@ export const FrameWrapper = () => {
         alt="Group"
         src="https://c.animaapp.com/mhyvw56jKmrjx6/img/group-11.png"
       />
+      </div>
     </div>
   );
 };

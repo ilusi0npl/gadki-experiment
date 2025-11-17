@@ -98,22 +98,23 @@ export const GadkiDlaRodzicwI = () => {
   const helpSectionPosition = newsletterPosition + 1709;
 
   // Calculate total page height dynamically (help section + footer wrapper height + footer)
-  const pageHeight = helpSectionPosition + 1098 + 500; // Help section container + footer height + buffer
+  const pageHeight = helpSectionPosition + 982 + 485; // Footer position + footer height
 
   return (
-    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] relative" style={{ height: `${pageHeight}px` }}>
+    <div className="bg-beige-200 w-full relative overflow-x-hidden" style={{ height: `${pageHeight}px` }}>
+      <div className="w-full relative" style={{ height: `${pageHeight}px` }}>
       {/* BACKGROUND LAYER - Full-width backgrounds */}
-      <div className="absolute inset-0 w-screen pointer-events-none">
+      <div className="absolute inset-0 w-full pointer-events-none">
         {/* Top Union SVG - Full width */}
         <img
-          className="absolute w-screen h-[778px] top-0 left-0 object-cover"
+          className="absolute w-full h-[778px] top-0 left-0 object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-3.svg"
         />
       </div>
 
-      {/* CONTENT LAYER - Centered 1728px container */}
-      <div className="max-w-[1728px] mx-auto relative h-full">
+      {/* CONTENT LAYER - Full width container */}
+      <div className="w-full relative h-full">
       <Header />
 
       <img
@@ -548,6 +549,7 @@ export const GadkiDlaRodzicwI = () => {
 
       {/* Footer Section with Background - reusable component */}
       <FooterSectionWithBackground topPosition={helpSectionPosition} />
+      </div>
       </div>
     </div>
   );

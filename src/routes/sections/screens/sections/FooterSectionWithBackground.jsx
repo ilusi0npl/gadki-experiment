@@ -25,7 +25,7 @@ export const FooterSectionWithBackground = ({
       {/* Wave backgrounds - Two layers for depth */}
       {/* First wave (union-2) */}
       <img
-        className="absolute left-0 w-screen h-[660px] object-cover"
+        className="absolute left-0 w-full h-[660px] object-cover"
         style={{ top: `${topPosition + 125}px`, zIndex: 1 }}
         alt="Union"
         src="https://c.animaapp.com/kiXkeqSn/img/union-2.svg"
@@ -33,7 +33,7 @@ export const FooterSectionWithBackground = ({
 
       {/* Second wave (union-3) - 150px lower to create layered wavy bottom effect */}
       <img
-        className="absolute left-0 w-screen h-[750px] object-cover"
+        className="absolute left-0 w-full h-[750px] object-cover"
         style={{ top: `${topPosition + 125 + 150}px`, zIndex: 1 }}
         alt="Union"
         src="https://c.animaapp.com/kiXkeqSn/img/union-3.svg"
@@ -41,14 +41,16 @@ export const FooterSectionWithBackground = ({
 
       {/* Help Section Container */}
       <div
-        className="absolute left-0 w-full max-w-[1728px] mx-auto"
+        className="absolute left-0 w-full"
         style={{ top: `${topPosition}px`, height: '1098px', zIndex: 2 }}
       >
-        {/* Dog image */}
+        {/* Centered container for all content */}
+        <div className="relative max-w-[1728px] mx-auto h-full">
+        {/* Dog image - centered horizontally */}
         {showDog && (
           <img
             className="absolute w-[231px] h-[251px]"
-            style={{ top: '0px', left: '748px' }}
+            style={{ top: '0px', left: '50%', transform: 'translateX(-50%)' }}
             alt="Piesek"
             src="https://c.animaapp.com/kiXkeqSn/img/piesek2-01-1@2x.png"
           />
@@ -59,15 +61,16 @@ export const FooterSectionWithBackground = ({
           <FrameWrapper />
         </div>
 
-        {/* Decorative image next to footer */}
+        {/* Decorative image next to footer - positioned at right edge of centered container */}
         {showDecorative && (
           <img
-            className="absolute left-[1480px] w-[248px] h-[419px] animate-gentle-pulse"
+            className="absolute right-0 w-[248px] h-[419px] animate-gentle-pulse"
             style={{ top: '274px' }}
             alt="Group"
             src="https://c.animaapp.com/kiXkeqSn/img/group-11@2x.png"
           />
         )}
+        </div>
       </div>
 
       {/* Footer - positioned 982px after section start (overlaps FrameWrapper by 116px) */}

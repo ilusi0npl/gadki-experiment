@@ -43,26 +43,26 @@ export const GadkiDlaDzieci1012 = () => {
   }, []);
 
   return (
-    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[8970px] relative">
+    <div className="bg-beige-200 overflow-hidden w-full h-[8970px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
-      <div className="absolute inset-0 w-screen pointer-events-none">
+      <div className="absolute inset-0 w-full pointer-events-none">
         {/* Top Union SVG - Full width */}
         <img
-          className="absolute w-screen h-[778px] top-0 left-0 object-cover"
+          className="absolute w-full h-[778px] top-0 left-0 object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-1.svg"
         />
 
         {/* Newsletter Union SVG - Full width */}
         <img
-          className="absolute top-[7490px] left-0 w-screen h-[723px] object-cover"
+          className="absolute top-[7490px] left-0 w-full h-[723px] object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-2.svg"
         />
 
         {/* Bottom Help Section Union SVG - Full width */}
         <img
-          className="absolute top-[7886px] left-0 w-screen h-[723px] object-cover"
+          className="absolute top-[7886px] left-0 w-full h-[723px] object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union-3.svg"
         />
@@ -78,7 +78,9 @@ export const GadkiDlaDzieci1012 = () => {
         src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/group.png"
       />
 
-      <div className="absolute top-[7734px] left-0 w-[1728px] h-[875px]">
+      <div className="absolute top-[7734px] left-0 w-full h-[875px]">
+        {/* Centered wrapper for help section content */}
+        <div className="relative max-w-[1728px] mx-auto h-full">
 
         <div ref={helpSection1.ref} className={`flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[137px] left-[374px] ${helpSection1.className}`}>
           <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
@@ -171,6 +173,7 @@ export const GadkiDlaDzieci1012 = () => {
           alt="Union"
           src="https://c.animaapp.com/mhyuu2kvHVVHVs/img/union.png"
         />
+        </div>
       </div>
 
       <img

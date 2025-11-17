@@ -9,7 +9,26 @@ import { SectionComponentNode } from "./sections/SectionComponentNode";
 
 export const GadkiStrona = () => {
   return (
-    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[6729px] relative">
+    <div className="bg-beige-200 overflow-hidden w-full h-[6729px] relative">
+      {/* BACKGROUND LAYER - Full-width backgrounds */}
+      <div className="absolute inset-0 w-full pointer-events-none">
+        {/* Top Union SVG - Full width */}
+        <img
+          className="absolute w-full h-[259px] top-0 left-0 object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyvtq61XzwmaX/img/union-1.svg"
+        />
+
+        {/* Newsletter Union SVG - Full width */}
+        <img
+          className="absolute top-[5237px] left-0 w-full h-[723px] object-cover"
+          alt="Union"
+          src="https://c.animaapp.com/mhyvtq61XzwmaX/img/union-3.svg"
+        />
+      </div>
+
+      {/* CONTENT LAYER - Centered 1728px container */}
+      <div className="max-w-[1728px] mx-auto relative h-full">
       <Footer />
       <img
         className="absolute w-[10.11%] h-0 top-0 left-[3.95%]"
@@ -20,12 +39,6 @@ export const GadkiStrona = () => {
       <img
         className="absolute w-[102.47%] h-0 top-0 left-[-652.31%]"
         alt="Vector"
-      />
-
-      <img
-        className="absolute top-0 left-0 w-[1728px] h-[259px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyvtq61XzwmaX/img/union-1.svg"
       />
 
       <img
@@ -50,20 +63,14 @@ export const GadkiStrona = () => {
       <FrameWrapper />
       <DivWrapper />
       <p className="absolute top-[3349px] left-[474px] w-[781px] font-lato font-normal text-black text-2xl tracking-[-0.26px] leading-9">
-        Niezwykle ważny jest dotyk. Dla dzieci dotyk jest zmysłem, za pomocą
+        Niezwykle ważny jest dotyk. Dla dzieci dotyk jest zmysłem, za pomocą
         którego poznają świat. Łagodny dotyk bliskiej osoby jest czymś, czego
         maluchy bardzo potrzebują, gdyż to daje im poczucie, że są bezpieczne i
         kochane. Dla dziecka ważne jest, gdy może swoim ciałem poczuć Twoje
-        ciało. Taki dotyk „skóra do skóry” buduje poczucie bliskości i zaufanie
+        ciało. Taki dotyk „skóra do skóry" buduje poczucie bliskości i zaufanie
         pomiędzy Wami. Delikatnie głaszcz malucha i przytulaj, a już niedługo
         dziecko będzie rozróżniać Twój dotyk spośród wszystkich innych!
       </p>
-
-      <img
-        className="absolute top-[5237px] left-0 w-[1728px] h-[723px]"
-        alt="Union"
-        src="https://c.animaapp.com/mhyvtq61XzwmaX/img/union-3.svg"
-      />
 
       <Div />
       <div className="flex flex-col w-[980px] items-start gap-[72px] absolute top-[1453px] left-[374px]">
@@ -94,6 +101,7 @@ export const GadkiStrona = () => {
       <Newsletter />
       <div className="absolute top-[4607px] left-[575px] font-happy-season font-semibold text-[#e83f4b] text-[200px] text-center tracking-[-2.20px] leading-[220.0px] whitespace-nowrap">
         Materiały
+      </div>
       </div>
     </div>
   );

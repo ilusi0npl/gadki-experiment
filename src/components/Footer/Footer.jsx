@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="relative w-full h-[485px] flex items-center justify-center bg-beige-100">
+    <footer className="relative w-full h-[485px] bg-beige-100">
+      <div className="w-full px-[164px] h-full flex items-center justify-center">
       <div className="mt-[119.4px] h-[206.43px] ml-[-34px] w-[1146px] relative">
         <Link
           to="/"
@@ -81,6 +82,7 @@ export const Footer = () => {
           alt="Dofinansowane przez Unię Europejską"
           src="/img/fdds-eu-logo.svg"
         />
+      </div>
       </div>
     </footer>
   );

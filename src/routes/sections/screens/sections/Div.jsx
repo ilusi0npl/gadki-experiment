@@ -2,13 +2,16 @@ import React from "react";
 
 export const Div = () => {
   return (
-    <div className="absolute top-[5482px] left-0 w-[1728px] h-[874px]">
+    <div className="absolute top-[5482px] left-0 w-full h-[874px]">
+      {/* Background image - full width */}
       <img
-        className="absolute top-[151px] left-0 w-[1728px] h-[723px]"
+        className="absolute top-[151px] left-0 w-full h-[723px]"
         alt="Union"
         src="https://c.animaapp.com/mhyvtq61XzwmaX/img/union-2.svg"
       />
 
+      {/* Content wrapper - centered 1728px container */}
+      <div className="relative max-w-[1728px] mx-auto h-full">
       <div className="flex flex-col w-[380px] h-[582px] items-start gap-12 absolute top-[136px] left-[374px]">
         <p className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-4xl tracking-[-0.40px] leading-[54px]">
           Jeżeli jesteś dzieckiem i trudno Ci porozmawiać z osobą dorosłą
@@ -100,6 +103,7 @@ export const Div = () => {
         alt="Union"
         src="https://c.animaapp.com/mhyvtq61XzwmaX/img/union.png"
       />
+      </div>
     </div>
   );
 };

@@ -86,7 +86,7 @@ export const FrameWrapper = () => {
       </div>
 
       <img
-        className="absolute top-[370px] left-0 w-[184px] h-[379px]"
+        className="absolute top-[370px] left-[calc(50%-864px)] w-[184px] h-[379px]"
         alt="Vector"
         src="https://c.animaapp.com/kiXkeqSn/img/vector-12@2x.png"
       />

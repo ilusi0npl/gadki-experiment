@@ -35,14 +35,14 @@ export const MenuOverlay = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-40 w-screen h-screen overflow-hidden">
+    <div className="fixed inset-0 z-40 w-full h-screen overflow-hidden">
       {/* Menu Content */}
       <div className="bg-fddsraspberry w-full min-w-[1728px] min-h-screen relative">
         {/* BACKGROUND LAYER - Full-width backgrounds */}
-        <div className="absolute inset-0 w-screen pointer-events-none">
+        <div className="absolute inset-0 w-full pointer-events-none">
           {/* Bottom Union SVG - Full width */}
           <img
-            className="absolute top-[1004px] left-0 w-screen h-[113px] object-cover"
+            className="absolute top-[1004px] left-0 w-full h-[113px] object-cover"
             alt="Union"
             src="https://c.animaapp.com/mhyud8wmJZMflz/img/union.svg"
           />

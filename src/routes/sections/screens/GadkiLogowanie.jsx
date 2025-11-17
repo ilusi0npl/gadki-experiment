@@ -14,12 +14,12 @@ export const GadkiLogowanie = () => {
   }, []);
 
   return (
-    <div className="bg-beige-200 overflow-hidden w-full min-w-[1728px] h-[4053px] relative">
+    <div className="bg-beige-200 overflow-hidden w-full h-[4053px] relative">
       {/* BACKGROUND LAYER - Full-width backgrounds */}
-      <div className="absolute inset-0 w-screen pointer-events-none">
+      <div className="absolute inset-0 w-full pointer-events-none">
         {/* Top Union SVG - Full width */}
         <img
-          className="absolute w-screen h-[259px] top-0 left-0 object-cover"
+          className="absolute w-full h-[259px] top-0 left-0 object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyvuxooJVyLWW/img/union-2.svg"
         />
@@ -28,7 +28,6 @@ export const GadkiLogowanie = () => {
       {/* CONTENT LAYER - Centered 1728px container */}
       <div className="max-w-[1728px] mx-auto relative h-full">
       <Header />
-      <Footer />
       <img
         className="absolute top-[370px] left-[1158px] w-[417px] h-52"
         alt="Group"
@@ -92,6 +91,8 @@ export const GadkiLogowanie = () => {
       />
 
       <BoxesWrapper />
+
+      <Footer />
       </div>
     </div>
   );

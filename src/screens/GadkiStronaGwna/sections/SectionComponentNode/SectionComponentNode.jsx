@@ -7,7 +7,7 @@ export const SectionComponentNode = () => {
   return (
     <div ref={ref} className={`flex flex-col w-[655px] items-center gap-12 absolute top-[5938px] left-[535px] ${className}`}>
       <img
-        className="absolute top-[433px] left-[927px] w-[266px] h-[337px]"
+        className="absolute top-[433px] right-[-272px] w-[266px] h-[337px]"
         alt="Vector"
         src="https://c.animaapp.com/kiXkeqSn/img/vector-14@2x.png"
       />
