@@ -1,10 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "../../../components/Header";
-import { Footer } from "../../../components/Footer";
 import { FAQ } from "../../../components/FAQ/FAQ";
 import { useScrollReveal } from "../../../hooks/useScrollReveal";
-import { FrameWrapper } from "../../../screens/GadkiStronaGwna/sections/FrameWrapper";
+import { FooterSectionWithBackground } from "./sections/FooterSectionWithBackground";
 
 export const GadkiDlaRodzicwI = () => {
   // State to track FAQ section height for dynamic positioning
@@ -110,23 +109,6 @@ export const GadkiDlaRodzicwI = () => {
           className="absolute w-screen h-[778px] top-0 left-0 object-cover"
           alt="Union"
           src="https://c.animaapp.com/mhyuvh6ynrLTWn/img/union-3.svg"
-        />
-
-        {/* Footer backgrounds - Two wave layers that end before footer */}
-        {/* First wave (union-2) - starts at middle of dog */}
-        <img
-          className="absolute left-0 w-screen h-[660px] object-cover"
-          style={{ top: `${helpSectionPosition + 125}px` }}
-          alt="Union"
-          src="https://c.animaapp.com/kiXkeqSn/img/union-2.svg"
-        />
-
-        {/* Second wave (union-3) - 150px lower to create layered wavy bottom effect */}
-        <img
-          className="absolute left-0 w-screen h-[750px] object-cover"
-          style={{ top: `${helpSectionPosition + 125 + 150}px` }}
-          alt="Union"
-          src="https://c.animaapp.com/kiXkeqSn/img/union-3.svg"
         />
       </div>
 
@@ -564,34 +546,8 @@ export const GadkiDlaRodzicwI = () => {
         </Link>
       </div>
 
-      {/* Footer Section Container - matching home page structure */}
-      <div className="absolute left-0 w-full max-w-[1728px] mx-auto" style={{ top: `${helpSectionPosition}px`, height: '1098px' }}>
-        {/* Piesek - dog image */}
-        <img
-          className="absolute w-[231px] h-[251px]"
-          style={{ top: '0px', left: '748px' }}
-          alt="Piesek"
-          src="https://c.animaapp.com/kiXkeqSn/img/piesek2-01-1@2x.png"
-        />
-
-        {/* FrameWrapper - help section with phone numbers */}
-        <div className="absolute w-full" style={{ top: '185px' }}>
-          <FrameWrapper />
-        </div>
-
-        {/* Decorative image next to footer */}
-        <img
-          className="absolute left-[1480px] w-[248px] h-[419px] animate-gentle-pulse"
-          style={{ top: '274px' }}
-          alt="Group"
-          src="https://c.animaapp.com/kiXkeqSn/img/group-11@2x.png"
-        />
-      </div>
-
-      {/* Footer at the bottom - positioned 982px after help section start (overlaps FrameWrapper by 116px) */}
-      <div className="absolute left-0 w-full" style={{ top: `${helpSectionPosition + 982}px` }}>
-        <Footer />
-      </div>
+      {/* Footer Section with Background - reusable component */}
+      <FooterSectionWithBackground topPosition={helpSectionPosition} />
       </div>
     </div>
   );
