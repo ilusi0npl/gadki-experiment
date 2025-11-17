@@ -35,14 +35,14 @@ export const MenuOverlay = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-40 w-full h-screen overflow-hidden">
+    <div className="fixed inset-0 z-40 w-full h-screen overflow-hidden pointer-events-none">
       {/* Menu Content */}
-      <div className="bg-fddsraspberry w-full min-w-[1728px] min-h-screen relative">
+      <div className="bg-fddsraspberry w-full min-w-[1728px] min-h-screen relative pointer-events-none">
         {/* BACKGROUND LAYER - Full-width backgrounds */}
         <div className="absolute inset-0 w-full pointer-events-none">
           {/* Bottom Union SVG - Full width */}
           <img
-            className="absolute top-[1004px] left-0 w-full h-[113px] object-cover"
+            className="absolute top-[1004px] left-0 w-full h-[113px] object-cover pointer-events-none"
             alt="Union"
             src="https://c.animaapp.com/mhyud8wmJZMflz/img/union.svg"
           />
@@ -54,7 +54,7 @@ export const MenuOverlay = () => {
             <Link
               to="/dla-dzieci"
               onClick={closeMenu}
-              className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity"
+              className="relative self-stretch mt-[-1.00px] font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity pointer-events-auto"
             >
               Dla dzieci
             </Link>
@@ -62,7 +62,7 @@ export const MenuOverlay = () => {
             <Link
               to="/dla-rodzicow-i-opiekunow"
               onClick={closeMenu}
-              className="relative self-stretch font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity"
+              className="relative self-stretch font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] hover:opacity-80 transition-opacity pointer-events-auto"
             >
               Dla rodziców i opiekunów
             </Link>
@@ -70,7 +70,7 @@ export const MenuOverlay = () => {
             <Link
               to="/dla-edukatorow"
               onClick={closeMenu}
-              className="relative w-fit mr-[-48.14px] font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] whitespace-nowrap hover:opacity-80 transition-opacity"
+              className="relative w-fit mr-[-48.14px] font-happy-season font-semibold text-white text-8xl tracking-[-1.06px] leading-[105.6px] whitespace-nowrap hover:opacity-80 transition-opacity pointer-events-auto"
             >
               Dla edukatorów i nauczycieli
             </Link>
@@ -80,7 +80,7 @@ export const MenuOverlay = () => {
             <Link
               to="/o-kampanii"
               onClick={closeMenu}
-              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity"
+              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity pointer-events-auto"
             >
               O programie
             </Link>
@@ -88,7 +88,7 @@ export const MenuOverlay = () => {
             <Link
               to="/faq"
               onClick={closeMenu}
-              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity"
+              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity pointer-events-auto"
             >
               FAQ
             </Link>
@@ -96,7 +96,7 @@ export const MenuOverlay = () => {
             <Link
               to="/logowanie"
               onClick={closeMenu}
-              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity"
+              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity pointer-events-auto"
             >
               Logowanie/Rejestracja
             </Link>
@@ -104,20 +104,20 @@ export const MenuOverlay = () => {
             <Link
               to="/dla-rodzicow-i-opiekunow"
               onClick={closeMenu}
-              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity"
+              className="relative w-fit mt-[-1.00px] font-lato font-medium text-white text-2xl tracking-[-0.26px] leading-[26.4px] whitespace-nowrap hover:opacity-80 transition-opacity pointer-events-auto"
             >
               Для батьків
             </Link>
           </div>
 
           <img
-            className="absolute top-[485px] left-0 w-[274px] h-[419px]"
+            className="absolute top-[485px] left-0 w-[274px] h-[419px] pointer-events-none"
             alt="Group"
             src="https://c.animaapp.com/mhyud8wmJZMflz/img/group-3.png"
           />
 
           <img
-            className="absolute top-[300px] left-[1290px] w-[376px] h-[285px]"
+            className="absolute top-[300px] left-[1290px] w-[376px] h-[285px] pointer-events-none"
             alt="Group"
             src="https://c.animaapp.com/mhyud8wmJZMflz/img/group-5.png"
           />

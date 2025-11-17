@@ -113,8 +113,9 @@ export const GadkiDlaRodzicwI = () => {
         />
       </div>
 
-      {/* CONTENT LAYER - Full width container */}
-      <div className="w-full relative h-full">
+      {/* CONTENT LAYER - Centered container */}
+      <div className="w-full relative h-full flex justify-center">
+        <div className="max-w-[1728px] w-full relative h-full">
       <Header />
 
       <img
@@ -549,6 +550,7 @@ export const GadkiDlaRodzicwI = () => {
 
       {/* Footer Section with Background - reusable component */}
       <FooterSectionWithBackground topPosition={helpSectionPosition} />
+      </div>
       </div>
       </div>
     </div>
